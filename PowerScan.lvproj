@@ -187,6 +187,10 @@
 		<Item Name="cameratest.vi" Type="VI" URL="../cameratest.vi"/>
 		<Item Name="Main3.vi" Type="VI" URL="../Main3.vi"/>
 		<Item Name="Experiment.lvclass" Type="LVClass" URL="../Experiment_class/Experiment.lvclass"/>
+		<Item Name="MTEC_Async.lvclass" Type="LVClass" URL="../MTEC_Async_class/MTEC_Async.lvclass"/>
+		<Item Name="MTtecAsyncTest.vi" Type="VI" URL="../MTtecAsyncTest.vi"/>
+		<Item Name="mtect_regular_test.vi" Type="VI" URL="../mtect_regular_test.vi"/>
+		<Item Name="array test.vi" Type="VI" URL="../../../test/array test.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="Close.vi" Type="VI" URL="/&lt;instrlib&gt;/Tektronix AFG 3000 Series/Public/Close.vi"/>
@@ -274,7 +278,6 @@
 				<Item Name="IMAQ WindZoom 2" Type="VI" URL="/&lt;vilib&gt;/vision/Display.llb/IMAQ WindZoom 2"/>
 				<Item Name="FormatTime String.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/FormatTime String.vi"/>
 				<Item Name="subElapsedTime.vi" Type="VI" URL="/&lt;vilib&gt;/express/express execution control/ElapsedTimeBlock.llb/subElapsedTime.vi"/>
-				<Item Name="ULx_LV.dll" Type="Document" URL="/&lt;vilib&gt;/ULx/ULx_LV.dll"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="tm_getframe16_40.vi" Type="VI" URL="/&lt;userlib&gt;/Hamamatsu Video Capture/tm_getframe16_40.vi"/>
@@ -310,10 +313,6 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="dwf.dll" Type="Document" URL="/../Windows/System32/dwf.dll"/>
-			<Item Name="AG34401Temperature.lvclass" Type="LVClass" URL="../AG34401Temperature_class/AG34401Temperature.lvclass"/>
-			<Item Name="MCCTemp.lvclass" Type="LVClass" URL="../MCCTemp_class/MCCTemp.lvclass"/>
-			<Item Name="Scheduler.lvclass" Type="LVClass" URL="../Scheduler_class/Scheduler.lvclass"/>
-			<Item Name="DataSaver.lvclass" Type="LVClass" URL="../DataSaver_class/DataSaver.lvclass"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="EXE">
@@ -337,10 +336,10 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Main Application/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{E7BFF366-DAB8-43B4-AA23-0662F14B8EC9}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{04B475E1-04C7-4A89-80BE-B47BDBB71E4D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref"></Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main3.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
