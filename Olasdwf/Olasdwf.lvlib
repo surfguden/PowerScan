@@ -1,13 +1,13 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Library LVVersion="19008000">
-	<Property Name="NI.Lib.Icon" Type="Bin">'1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!,(!!!*Q(C=\:;R&lt;B."%)&lt;`%#11&amp;;ZIE96%Y9Z"IK"$LEW$F4?9&amp;[")[SISEK6)&lt;N!)#]J)@A"4O/!&amp;JELP"[$R+RT@L&gt;=/!?S!")+#W:O\P8^W:\\&lt;7Z]M&amp;&lt;MLX6:TE_G1^9A`WG_^ST;_;*L&amp;AG.2/JS;YECT%C`&gt;88T4W5D.^@AG7A@^+&amp;\3VLPWG$68^:OK.NO\K`B?+XS$W8[\00T]AR)@.-VAQ,'V:H?NT^^WPY^TO2YH46-P2@FG@D09"L;8'N`7&lt;Z&gt;H5.05**PY8JP^D``^?/`Q`ON&gt;(L+@_8G0&lt;BTUBUU[5PMBQB-0X(&amp;4'WI30&gt;%40&gt;%40&gt;%$0&gt;!$0&gt;!$0&gt;!&gt;X&gt;%&gt;X&gt;%&gt;X&gt;%.X&gt;!.X&gt;!.X&gt;",1R?[U)8/KC4&amp;EU**UC2"-BA5*;?%*_&amp;*?")?&lt;J8Q*$Q*4]+4]$"%#5`#E`!E0!E0UZ4Q*$Q*4]+4]*#KE'2J[0!E0+28Q"0Q"$Q"4]"$315]!5"1,%A=*!&amp;$14$I"$Q"4]"$6Q&amp;0Q"0Q"$Q"$W%&amp;0!&amp;0Q"0Q"$R-+;M3B;:N[0#12A[0Q_0Q/$Q/$[HF]$A]$I`$Y`"14A[0Q_.!/!7&gt;Z#$)G?1-='Y=(I?(CRQ?B]@B=8A=(E,F$8F:G:;G&lt;?DQ'$Q'D]&amp;D]"A]J*$"9`!90!;0Q5.;'4Q'D]&amp;D]"A]F*,"9`!90!;)5:4S-J):%YV"BG$Q=*4&gt;9O5N23'RUK3[?65XJ?JG5^V%KJN$^;7LPET6F[3[_+K,KLJ9KIOA_H#KU+IQKE65*\=$N?;]QJ@Y("`DJ`A1\_.&gt;P../`=U$V_OV6KO6FMOFZP/ZRO/R4E^0.2Q/V?`XV?VWV?FU&gt;H]H(N)W&gt;L4^,IXIY]?4M_&gt;PJW=P4K:PHJR-T__^H(R_@9Z_Z].GT0&amp;E&gt;0`"&gt;(4`]@4&gt;UY`4_;O,S@NH&amp;WX]6\X.^WHX8@I8PIW[J?;LPW'MU2?\\+DT!!!!!!</Property>
-	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
+<Library LVVersion="23008000">
+	<Property Name="NI.Lib.Icon" Type="Bin">)Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!,(!!!*Q(C=\:;R&lt;B."%)&lt;`%#11&amp;;ZIE96%Y9Z"IK"$LEW$F4?9&amp;[")[SISEK6)&lt;N!)#]J)@A"4O/!&amp;JELP"[$R+RT@L&gt;=/!?S!")+#W:O\P8^W:\\&lt;7Z]M&amp;&lt;MLX6:TE_G1^9A`WG_^ST;_;*L&amp;AG.2/JS;YECT%C`&gt;88T4W5D.^@AG7A@^+&amp;\3VLPWG$68^:OK.NO\K`B?+XS$W8[\00T]AR)@.-VAQ,'V:H?NT^^WPY^TO2YH46-P2@FG@D09"L;8'N`7&lt;Z&gt;H5.05**PY8JP^D``^?/`Q`ON&gt;(L+@_8G0&lt;BTUBUU[5PMBQB-0X(&amp;4'WI30&gt;%40&gt;%40&gt;%$0&gt;!$0&gt;!$0&gt;!&gt;X&gt;%&gt;X&gt;%&gt;X&gt;%.X&gt;!.X&gt;!.X&gt;",1R?[U)8/KC4&amp;EU**UC2"-BA5*;?%*_&amp;*?")?&lt;J8Q*$Q*4]+4]$"%#5`#E`!E0!E0UZ4Q*$Q*4]+4]*#KE'2J[0!E0+28Q"0Q"$Q"4]"$315]!5"1,%A=*!&amp;$14$I"$Q"4]"$6Q&amp;0Q"0Q"$Q"$W%&amp;0!&amp;0Q"0Q"$R-+;M3B;:N[0#12A[0Q_0Q/$Q/$[HF]$A]$I`$Y`"14A[0Q_.!/!7&gt;Z#$)G?1-='Y=(I?(CRQ?B]@B=8A=(E,F$8F:G:;G&lt;?DQ'$Q'D]&amp;D]"A]J*$"9`!90!;0Q5.;'4Q'D]&amp;D]"A]F*,"9`!90!;)5:4S-J):%YV"BG$Q=*4&gt;9O5N23'RUK3[?65XJ?JG5^V%KJN$^;7LPET6F[3[_+K,KLJ9KIOA_H#KU+IQKE65*\=$N?;]QJ@Y("`DJ`A1\_.&gt;P../`=U$V_OV6KO6FMOFZP/ZRO/R4E^0.2Q/V?`XV?VWV?FU&gt;H]H(N)W&gt;L4^,IXIY]?4M_&gt;PJW=P4K:PHJR-T__^H(R_@9Z_Z].GT0&amp;E&gt;0`"&gt;(4`]@4&gt;UY`4_;O,S@NH&amp;WX]6\X.^WHX8@I8PIW[J?;LPW'MU2?\\+DT!!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">587235328</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Item Name="subvi" Type="Folder">
 		<Item Name="Error Converter (ErrCode or Status).vi" Type="VI" URL="../subvi/Error Converter (ErrCode or Status).vi"/>
 	</Item>
-	<Item Name="dwf.dll" Type="Document" URL="../../../../../../Windows/System32/dwf.dll"/>
+	<Item Name="dwf.dll" Type="Document" URL="../../../../dwf.dll"/>
 	<Item Name="F Dwf Analog Impedance Amplitude Get.vi" Type="VI" URL="../VIs/F Dwf Analog Impedance Amplitude Get.vi"/>
 	<Item Name="F Dwf Analog Impedance Amplitude Set.vi" Type="VI" URL="../VIs/F Dwf Analog Impedance Amplitude Set.vi"/>
 	<Item Name="F Dwf Analog Impedance Comp Get.vi" Type="VI" URL="../VIs/F Dwf Analog Impedance Comp Get.vi"/>
