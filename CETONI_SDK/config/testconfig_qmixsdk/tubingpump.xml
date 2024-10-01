@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="peRISYS_I_1_SmcDrive">
+				<Type>Lcl::CSmcAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="16">Usl::Nanotec::CSmcDrive</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<RevolutionsPerMeter>1000</RevolutionsPerMeter>
+				<MinPosition>-2146000000</MinPosition>
+				<MaxPosition>2146000000</MaxPosition>
+				<MaxVelocity>800</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>800</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRevolution>800</VelocityUnitsPerRevolution>
+				<TimeUnitsPerMinute>60</TimeUnitsPerMinute>
+				<ReadAxisConfigFromDevice>0</ReadAxisConfigFromDevice>
+				<Simulated>true</Simulated>
+				<OptionalDevice>1</OptionalDevice>
+			</Device>
+			<Device Name="peRISYS_I_1_Pump">
+				<Type>Lcl::CSmcPeristalticPump</Type>
+				<DriveDevice>peRISYS_I_1_SmcDrive</DriveDevice>
+				<Simulated>true</Simulated>
+			</Device>
+			<Device Name="peRISYS_S_1_SmcDrive">
+				<Type>Lcl::CSmcAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="17">Usl::Nanotec::CSmcDrive</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<RevolutionsPerMeter>1000</RevolutionsPerMeter>
+				<MinPosition>-2146000000</MinPosition>
+				<MaxPosition>2146000000</MaxPosition>
+				<MaxVelocity>800</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>800</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRevolution>800</VelocityUnitsPerRevolution>
+				<TimeUnitsPerMinute>60</TimeUnitsPerMinute>
+				<ReadAxisConfigFromDevice>0</ReadAxisConfigFromDevice>
+				<Simulated>true</Simulated>
+				<OptionalDevice>1</OptionalDevice>
+			</Device>
+			<Device Name="peRISYS_S_1_Pump">
+				<Type>Lcl::CSmcPeristalticPump</Type>
+				<DriveDevice>peRISYS_S_1_SmcDrive</DriveDevice>
+				<Simulated>true</Simulated>
+			</Device>
+		</DeviceList>
+	</labbCAN>
+	<TubingPumpManager>
+		<PumpList>
+			<TubingPump Name="peRISYS_I_1">
+				<Caption>peRISYS-I 1</Caption>
+				<LabbCanPump>peRISYS_I_1_Pump</LabbCanPump>
+				<StandardTubes>peRISYS-I</StandardTubes>
+			</TubingPump>
+			<TubingPump Name="peRISYS_S_1">
+				<Caption>peRISYS-S 1</Caption>
+				<LabbCanPump>peRISYS_S_1_Pump</LabbCanPump>
+				<StandardTubes>peRISYS-S</StandardTubes>
+			</TubingPump>
+		</PumpList>
+	</TubingPumpManager>
+	<ProcessDataPollingInterval_ms>500</ProcessDataPollingInterval_ms>
+	<StandardTubes>
+		<peRISYS-I>
+			<Tube Name="0.13 mm" ml_per_rev="0.0013"/>
+			<Tube Name="0.19 mm" ml_per_rev="0.0023"/>
+			<Tube Name="0.25 mm" ml_per_rev="0.0036"/>
+			<Tube Name="0.38 mm" ml_per_rev="0.0076"/>
+			<Tube Name="0.44 mm" ml_per_rev="0.01"/>
+			<Tube Name="0.51 mm" ml_per_rev="0.013"/>
+			<Tube Name="0.57 mm" ml_per_rev="0.016"/>
+			<Tube Name="0.64 mm" ml_per_rev="0.020"/>
+			<Tube Name="0.76 mm" ml_per_rev="0.028"/>
+			<Tube Name="0.89 mm" ml_per_rev="0.038"/>
+			<Tube Name="0.95 mm" ml_per_rev="0.043"/>
+			<Tube Name="1.02 mm" ml_per_rev="0.049"/>
+			<Tube Name="1.09 mm" ml_per_rev="0.056"/>
+			<Tube Name="1.14 mm" ml_per_rev="0.060"/>
+			<Tube Name="1.22 mm" ml_per_rev="0.068"/>
+			<Tube Name="1.30 mm" ml_per_rev="0.077"/>
+			<Tube Name="1.42 mm" ml_per_rev="0.090"/>
+			<Tube Name="1.52 mm" ml_per_rev="0.1"/>
+			<Tube Name="1.65 mm" ml_per_rev="0.12"/>
+			<Tube Name="1.75 mm" ml_per_rev="0.13"/>
+			<Tube Name="1.85 mm" ml_per_rev="0.14"/>
+			<Tube Name="2.06 mm" ml_per_rev="0.17"/>
+			<Tube Name="2.29 mm" ml_per_rev="0.20"/>
+			<Tube Name="2.54 mm" ml_per_rev="0.23"/>
+			<Tube Name="2.79 mm" ml_per_rev="0.26"/>
+		</peRISYS-I>
+		<peRISYS-S>
+			<Tube Name="0.13 mm" ml_per_rev="0.0020"/>
+			<Tube Name="0.19 mm" ml_per_rev="0.0085"/>
+			<Tube Name="0.25 mm" ml_per_rev="0.0128"/>
+			<Tube Name="0.38 mm" ml_per_rev="0.0237"/>
+			<Tube Name="0.44 mm" ml_per_rev="0.0294"/>
+			<Tube Name="0.51 mm" ml_per_rev="0.0366"/>
+			<Tube Name="0.57 mm" ml_per_rev="0.0433"/>
+			<Tube Name="0.64 mm" ml_per_rev="0.0516"/>
+			<Tube Name="0.76 mm" ml_per_rev="0.0671"/>
+			<Tube Name="0.89 mm" ml_per_rev="0.0856"/>
+			<Tube Name="0.95 mm" ml_per_rev="0.0947"/>
+			<Tube Name="1.02 mm" ml_per_rev="0.1070"/>
+			<Tube Name="1.09 mm" ml_per_rev="0.1174"/>
+			<Tube Name="1.14 mm" ml_per_rev="0.1260"/>
+			<Tube Name="1.22 mm" ml_per_rev="0.1402"/>
+			<Tube Name="1.30 mm" ml_per_rev="0.1550"/>
+			<Tube Name="1.42 mm" ml_per_rev="0.1781"/>
+			<Tube Name="1.52 mm" ml_per_rev="0.1984"/>
+			<Tube Name="1.65 mm" ml_per_rev="0.2250"/>
+			<Tube Name="1.75 mm" ml_per_rev="0.2479"/>
+			<Tube Name="1.85 mm" ml_per_rev="0.2705"/>
+			<Tube Name="2.06 mm" ml_per_rev="0.3203"/>
+			<Tube Name="2.29 mm" ml_per_rev="0.3777"/>
+			<Tube Name="2.54 mm" ml_per_rev="0.4430"/>
+			<Tube Name="2.79 mm" ml_per_rev="0.5108"/>
+		</peRISYS-S>
+	</StandardTubes>
+	<log4cplus>log4cplus.logger.TubingPumpLogger=WARN, LogAppender</log4cplus>
+	<WorkbenchCaption>Tubing Pump</WorkbenchCaption>
+	<PluginLogger>TubingPumpLogger</PluginLogger>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="peRISYS_I" NodeId="16" ManualNodeId="false" Index="13" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="peRISYS_S" NodeId="17" ManualNodeId="false" Index="14" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

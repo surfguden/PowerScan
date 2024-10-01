@@ -1,0 +1,6 @@
+<map id="labbCAN Digital I/O API" name="labbCAN Digital I/O API">
+<area shape="rect" id="node1" href="$group__lcdio__out.html" title="Digital output channel functions This group defines all functions to set digital output signals a cer..." alt="" coords="257,5,356,33"/>
+<area shape="rect" id="node2" href="$group__lcdio__chan__init.html" title="Digital I/O module channel initialisation functions This group defines all functions to initialise di..." alt="" coords="237,55,376,83"/>
+<area shape="rect" id="node3" href="$group__lcdio__in.html" title="Digital input channel functions This group defines all functions detect digital input signals on cert..." alt="" coords="263,106,351,134"/>
+<area shape="rect" id="node4" href="$group__lcdio__common.html" title="Common channel specific auxiliary functions. " alt="" coords="215,157,399,185"/>
+</map>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+    <FinalFOURCC>XVID</FinalFOURCC>
+    <DefaultFrameRate>8</DefaultFrameRate>
+    <log4cplus>
+        log4cplus.logger.VideoBuilderLogger=WARN, LogAppender
+    </log4cplus>
+	<PluginLogger>VideoBuilderLogger</PluginLogger>
+</Plugin>

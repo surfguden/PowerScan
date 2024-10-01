@@ -1,0 +1,1 @@
+%1 %2 --log_level=all --report_level=detailed

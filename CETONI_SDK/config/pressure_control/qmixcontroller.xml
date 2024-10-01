@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList/>
+		<ChannelList>
+			<Channel>
+				<Type>Lcl::CLocalControllerChannel</Type>
+				<ChannelName>PressureControl1</ChannelName>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="neMESYS Pressure Ctrl" K="0.1" Td="0" Ti="100" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="100" DisabledU="0" SampleTime_ms="50" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixP_1_AI0</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CPumpLoopOut</Type>
+						<Pump>neMESYS_Starter_1_Pump</Pump>
+					</Output>
+				</ControlLoop>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<Device Name="QmixPressureControl1">
+			<Type>QtLabb::CControlChannelDevice</Type>
+			<Caption>Pressure Control 1</Caption>
+			<ControllerChannel>PressureControl1</ControllerChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>200</MaxValue>
+			<Unit>bar</Unit>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+			<UserScaling>
+				<DeviceUnit>bar</DeviceUnit>
+				<Scaling Factor="1" Offset="0"/>
+			</UserScaling>
+		</Device>
+	</DeviceList>
+	<log4cplus>log4cplus.logger.QmixControllerLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>QmixControllerLogger</PluginLogger>
+	<PIDParameters>
+		<Param Name="Qmix Q+ Default" K="3" Td="0" Ti="260" Tt="250" DerivativeGainLimit="20" MinU="0" MaxU="100" DisabledU="0" SampleTime_ms="500" Setpoint="0"/>
+		<Param Name="Qmix Q- Default" K="3" Td="0" Ti="144" Tt="132" DerivativeGainLimit="40" MinU="-100" MaxU="100" DisabledU="0" SampleTime_ms="500" Setpoint="0"/>
+		<Param Name="neMESYS Pressure Control" K="0.5" Td="0" Ti="300" Tt="250" DerivativeGainLimit="0" MinU="-100" MaxU="100" DisabledU="0" SampleTime_ms="50" Setpoint="0"/>
+	</PIDParameters>
+</Plugin>
+<MetaInfo/>
+

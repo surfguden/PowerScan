@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="rotAXYS360_1_Lift">
+				<Type>Lcl::CTmcmAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="29">Usl::Trinamic::CTmcmTripleAxisStepperModule</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<IO DigOut="1" DigIn="1"/>
+				<LogicalDevice>0</LogicalDevice>
+				<RevolutionsPerMeter comment="5.08 mm spindle slope">196.850393700787</RevolutionsPerMeter>
+				<MinPosition comment="2mm offset from lower limit">78183</MinPosition>
+				<MaxPosition comment="2mm offset from upper limit">398293</MaxPosition>
+				<MaxVelocity>2047</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>17066.6666666667</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRPM>2.330168888889</VelocityUnitsPerRPM>
+				<AccelerationUnitsPerRPSperS>2.290649224533</AccelerationUnitsPerRPSperS>
+				<Simulated>true</Simulated>
+				<PDOConfig>
+					<RPDO No="0" Mapped="60400010" comment="Controloword"/>
+					<RPDO No="1" Mapped="607A0020" comment="Target Position"/>
+					<RPDO No="2" Mapped="60600008" comment="Modes of operation"/>
+					<RPDO No="3" Mapped="27030120" comment="Digital outputs - Physical outputs"/>
+					<TPDO No="0" Inhibit="0" Mapped="60410010" Mapped="60610008" comment="Statusword, Modes of operation display"/>
+					<TPDO No="1" Inhibit="1000" Mapped="60640020" comment="Position Actual"/>
+					<TPDO No="2" Inhibit="0" Mapped="27020020" comment="Device digital inputs"/>
+				</PDOConfig>
+				<ObjDictEntries>
+					<ObjDictEntry Index="2000" SubIndex="0" Value="6" Size="1" comment="Microstep Resolution"/>
+					<ObjDictEntry Index="2003" SubIndex="0" Value="255" Size="1" comment="Maximum Current Percent"/>
+					<ObjDictEntry Index="2004" SubIndex="0" Value="64" Size="1" comment="Standby Current Percent"/>
+					<ObjDictEntry Index="2005" SubIndex="0" ValueHex="C" Size="4" comment="Limit Switches Enable"/>
+					<ObjDictEntry Index="200C" SubIndex="1" Value="0" Size="1" comment="Brake current applied - disable brake"/>
+					<ObjDictEntry Index="200C" SubIndex="2" Value="0" Size="1" comment="Brake current released - disable brake"/>
+					<ObjDictEntry Index="2085" SubIndex="0" Value="5" Size="1" comment="Ramp Divisor"/>
+					<ObjDictEntry Index="2086" SubIndex="0" Value="1" Size="1" comment="Pulse Divisor"/>
+					<ObjDictEntry Index="2703" SubIndex="2" ValueHex="0x00E00000" Size="4" comment="Digital outputs - Output mask"/>
+					<ObjDictEntry Index="6067" SubIndex="0" Value="0" Size="4" comment="Position Window"/>
+					<ObjDictEntry Index="607C" SubIndex="0" Value="-401245" Size="4" comment="Home Offset"/>
+					<ObjDictEntry Index="6083" SubIndex="0" Value="260" Size="4" comment="Profile Acceleration"/>
+					<ObjDictEntry Index="6085" SubIndex="0" Value="320" Size="4" comment="Quick Stop Deceleration"/>
+					<ObjDictEntry Index="6098" SubIndex="0" Value="18" Size="1" comment="Homing Method"/>
+					<ObjDictEntry Index="6099" SubIndex="1" Value="1200" Size="4" comment="Fast Homing Speed"/>
+					<ObjDictEntry Index="6099" SubIndex="2" Value="400" Size="4" comment="Slow Homing Speed"/>
+					<ObjDictEntry Index="609A" SubIndex="0" Value="260" Size="4" comment="Homing Acceleration"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="rotAXYS360_1_Rotation">
+				<Type>Lcl::CTmcmAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="29">Usl::Trinamic::CTmcmTripleAxisStepperModule</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<LogicalDevice>1</LogicalDevice>
+				<RevolutionsPerMeter>1</RevolutionsPerMeter>
+				<MinPosition>-2140000000</MinPosition>
+				<MaxPosition>2140000000</MaxPosition>
+				<MaxVelocity>293</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>76800</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRPM>6</VelocityUnitsPerRPM>
+				<AccelerationUnitsPerRPSperS comment="6 Gear * 60s">360</AccelerationUnitsPerRPSperS>
+				<Simulated>true</Simulated>
+				<PDOConfig>
+					<RPDO No="0" Mapped="68400010" comment="Controloword"/>
+					<RPDO No="1" Mapped="687A0020" comment="Target Position"/>
+					<RPDO No="2" Mapped="68600008" comment="Modes of operation"/>
+					<TPDO No="0" Inhibit="0" Mapped="68410010" Mapped="68610008" comment="Statusword, Modes of operation display"/>
+					<TPDO No="1" Inhibit="1000" Mapped="68640020" comment="Position Actual"/>
+				</PDOConfig>
+				<ObjDictEntries>
+					<ObjDictEntry Index="220C" SubIndex="1" Value="0" Size="1" comment="Brake current applied - disable brake"/>
+					<ObjDictEntry Index="220C" SubIndex="2" Value="0" Size="1" comment="Brake current released - disable brake"/>
+					<ObjDictEntry Index="228C" SubIndex="0" Value="164" Size="1" comment="Velocity Dimension Index - 164 = RPM and acceleration RPM/s"/>
+					<ObjDictEntry Index="2203" SubIndex="0" Value="255" Size="1" comment="Maximum Current Percent - 255 = 100%"/>
+					<ObjDictEntry Index="2204" SubIndex="0" Value="128" Size="1" comment="Standby Current Percent"/>
+					<ObjDictEntry Index="2205" SubIndex="0" ValueHex="3" Size="4" comment="Limit Switches Disable"/>
+					<ObjDictEntry Index="6867" SubIndex="0" Value="0" Size="4" comment="Position Window"/>
+					<ObjDictEntry Index="687C" SubIndex="0" Value="17220" Size="4" comment="Home Offset"/>
+					<ObjDictEntry Index="6883" SubIndex="0" Value="1400" Size="4" comment="Profile Acceleration"/>
+					<ObjDictEntry Index="6898" SubIndex="0" Value="21" Size="1" comment="Homing Method"/>
+					<ObjDictEntry Index="6899" SubIndex="1" Value="293" Size="4" comment="Fast Homing Speed"/>
+					<ObjDictEntry Index="6899" SubIndex="2" Value="5" Size="4" comment="Slow Homing Speed"/>
+					<ObjDictEntry Index="689A" SubIndex="0" Value="1400" Size="4" comment="Homing Acceleration"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="rotAXYS360_1_Radius">
+				<Type>Lcl::CTmcmAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="29">Usl::Trinamic::CTmcmTripleAxisStepperModule</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<LogicalDevice>2</LogicalDevice>
+				<RevolutionsPerMeter>27.777777777778</RevolutionsPerMeter>
+				<MinPosition>16324</MinPosition>
+				<MaxPosition>72511</MaxPosition>
+				<HomePosition>73099</HomePosition>
+				<MaxVelocity>293</MaxVelocity>
+				<PositionPolarity>-1</PositionPolarity>
+				<PositionUnitsPerRevolution>12800</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRPM>1</VelocityUnitsPerRPM>
+				<AccelerationUnitsPerRPSperS comment="1 Gear * 60s">60</AccelerationUnitsPerRPSperS>
+				<Simulated>true</Simulated>
+				<PDOConfig>
+					<RPDO No="0" Mapped="70400010" comment="Controloword"/>
+					<RPDO No="1" Mapped="707A0020" comment="Target Position"/>
+					<RPDO No="2" Mapped="70600008" comment="Modes of operation"/>
+					<TPDO No="0" Inhibit="0" Mapped="70410010" Mapped="70610008" comment="Statusword, Modes of operation display"/>
+					<TPDO No="1" Inhibit="1000" Mapped="70640020" comment="Position Actual"/>
+				</PDOConfig>
+				<ObjDictEntries>
+					<ObjDictEntry Index="240C" SubIndex="1" Value="0" Size="1" comment="Brake current applied - disable brake"/>
+					<ObjDictEntry Index="240C" SubIndex="2" Value="0" Size="1" comment="Brake current released - disable brake"/>
+					<ObjDictEntry Index="248C" SubIndex="0" Value="164" Size="1" comment="Velocity Dimension Index - 164 = RPM and acceleration RPM/s"/>
+					<ObjDictEntry Index="2403" SubIndex="0" Value="150" Size="1" comment="Maximum Current Percent"/>
+					<ObjDictEntry Index="2404" SubIndex="0" Value="40" Size="1" comment="Standby Current Percent"/>
+					<ObjDictEntry Index="2405" SubIndex="0" Value="3" Size="4" comment="Limit Switches Disable"/>
+					<ObjDictEntry Index="7067" SubIndex="0" Value="0" Size="4" comment="Position Window"/>
+					<ObjDictEntry Index="707C" SubIndex="0" Value="0" Size="4" comment="Home Offset"/>
+					<ObjDictEntry Index="7083" SubIndex="0" Value="2400" Size="4" comment="Profile Acceleration"/>
+					<ObjDictEntry Index="7098" SubIndex="0" Value="35" Size="1" comment="Homing Method"/>
+					<ObjDictEntry Index="7099" SubIndex="1" Value="293" Size="4" comment="Fast Homing Speed"/>
+					<ObjDictEntry Index="7099" SubIndex="2" Value="32" Size="4" comment="Slow Homing Speed"/>
+					<ObjDictEntry Index="709A" SubIndex="0" Value="2400" Size="4" comment="Homing Acceleration"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="rotAXYS360_1">
+				<Type>Lcl::CRotaxys360</Type>
+				<LiftAxis>rotAXYS360_1_Lift</LiftAxis>
+				<RotationAxis>rotAXYS360_1_Rotation</RotationAxis>
+				<RadiusAxis>rotAXYS360_1_Radius</RadiusAxis>
+				<JibLength>-16</JibLength>
+				<RotationReversalAngleDegree>0</RotationReversalAngleDegree>
+			</Device>
+			<Device Name="rotAXYS360_1_Valve">
+				<Type>Lcl::CDigitalIoValve</Type>
+				<DigitalOutDevice>rotAXYS360_1_LiftDigitalOut</DigitalOutDevice>
+				<PositionBitfields>
+					<Position>0x0</Position>
+					<Position>0x400000</Position>
+				</PositionBitfields>
+				<InputPositionIndex>1</InputPositionIndex>
+				<OutputPositionIndex>0</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+				<MaximumPressure_bar>2</MaximumPressure_bar>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="rotAXYS360_1_DO0">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>rotAXYS360_1_LiftDigitalOut</Device>
+				<ChannelNo>21</ChannelNo>
+			</Channel>
+			<Channel Name="rotAXYS360_1_DO1">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>rotAXYS360_1_LiftDigitalOut</Device>
+				<ChannelNo>22</ChannelNo>
+			</Channel>
+			<Channel Name="rotAXYS360_1_DO2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>rotAXYS360_1_LiftDigitalOut</Device>
+				<ChannelNo>23</ChannelNo>
+			</Channel>
+			<Channel Name="rotAXYS360_1_DI0">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>rotAXYS360_1_LiftDigitalIn</Device>
+				<ChannelNo>21</ChannelNo>
+				<Inverted>1</Inverted>
+			</Channel>
+			<Channel Name="rotAXYS360_1_DI1">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>rotAXYS360_1_LiftDigitalIn</Device>
+				<ChannelNo>22</ChannelNo>
+				<Inverted>1</Inverted>
+			</Channel>
+			<Channel Name="rotAXYS360_1_DI2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>rotAXYS360_1_LiftDigitalIn</Device>
+				<ChannelNo>23</ChannelNo>
+				<Inverted>1</Inverted>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<AxisSystem Name="rotAXYS360_1">
+			<Caption>rotAXYS360 1</Caption>
+			<Type>Rotaxys360::CRotaxys360AxisSystem</Type>
+			<LinearAxis>
+				<LabbCANAxisName>rotAXYS360_1_Radius</LabbCANAxisName>
+			</LinearAxis>
+			<RotationAxis>
+				<LabbCANAxisName>rotAXYS360_1_Rotation</LabbCANAxisName>
+			</RotationAxis>
+			<LiftAxis>
+				<LabbCANAxisName>rotAXYS360_1_Lift</LabbCANAxisName>
+			</LiftAxis>
+			<WrapAroundMode>MODE_SINGLE_ROTATION</WrapAroundMode>
+			<SafeRotate>1</SafeRotate>
+			<RotationSplitPoint>0</RotationSplitPoint>
+			<JibLength>-16</JibLength>
+			<CalibrationPosition X="0" Y="-110" Z="30"/>
+			<SampleHolder Name="rotAXYS360_1_SampleHolder">
+				<Name>rotAXYS360_1SampleHolder</Name>
+				<SamplePosition>
+					<Center X="0" Y="-90" Z="0"/>
+					<Rotation>0</Rotation>
+				</SamplePosition>
+				<Center X="0" Y="0" Z="0"/>
+				<Size Length="127.5" Width="85.3" Height="12"/>
+				<Rotation>0</Rotation>
+			</SampleHolder>
+			<AutoHoming>1</AutoHoming>
+			<BasePlate>:/rotaxys360/baseplate_default.xml</BasePlate>
+			<DeviceList>
+				<Device Name="rotAXYS360_1_DigOUT1">
+					<Caption>rotAXYS360 1 DigOUT 1</Caption>
+					<Type>QtLabb::CDigitalOutChannelDevice</Type>
+					<DigOutChannel>rotAXYS360_1_DO0</DigOutChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+				<Device Name="rotAXYS360_1_DigOUT2">
+					<Caption>rotAXYS360 1 DigOUT 2</Caption>
+					<Type>QtLabb::CDigitalOutChannelDevice</Type>
+					<DigOutChannel>rotAXYS360_1_DO1</DigOutChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+				<Device Name="rotAXYS360_1_DigOUT3">
+					<Caption>rotAXYS360 1 DigOUT 3</Caption>
+					<Type>QtLabb::CDigitalOutChannelDevice</Type>
+					<DigOutChannel>rotAXYS360_1_DO2</DigOutChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+				<Device Name="rotAXYS360_1_DigIN1">
+					<Caption>rotAXYS360 1 DigIN 1</Caption>
+					<Type>QtLabb::CDigitalInChannelDevice</Type>
+					<DigInChannel>rotAXYS360_1_DI0</DigInChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+				<Device Name="rotAXYS360_1_DigIN2">
+					<Caption>rotAXYS360 1 DigIN 2</Caption>
+					<Type>QtLabb::CDigitalInChannelDevice</Type>
+					<DigInChannel>rotAXYS360_1_DI1</DigInChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+				<Device Name="rotAXYS360_1_DigIN3">
+					<Caption>rotAXYS360 1 DigIN 3</Caption>
+					<Type>QtLabb::CDigitalInChannelDevice</Type>
+					<DigInChannel>rotAXYS360_1_DI2</DigInChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+			</DeviceList>
+		</AxisSystem>
+	</DeviceList>
+	<PositioningWidget>
+		<OptimizeForTouch>0</OptimizeForTouch>
+		<SampleItemPosition X="0" Y="-90"/>
+		<XYPositionSeeker>rotAXYS360_1</XYPositionSeeker>
+		<ConnectPosMapTargetSignal>1</ConnectPosMapTargetSignal>
+		<PositioningMap>
+			<RulersVisible>false</RulersVisible>
+			<AutoFit>true</AutoFit>
+			<NavButtonVisible>true</NavButtonVisible>
+			<NavButtonSizePx>120</NavButtonSizePx>
+			<PositionSelectionColor>00FF00</PositionSelectionColor>
+			<TargetPositionColor>FFBE00</TargetPositionColor>
+			<ActualPositionColor>00FF00</ActualPositionColor>
+		</PositioningMap>
+		<SixWayButtonAxisAdapter>
+			<XAxis>
+				<BaseSpeed>3</BaseSpeed>
+				<ShiftKeyMultiplier>3</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.1</CtrlKeyMultiplier>
+				<AxisDevice>rotAXYS360_1_Rotation</AxisDevice>
+			</XAxis>
+			<YAxis>
+				<BaseSpeed>-10</BaseSpeed>
+				<ShiftKeyMultiplier>2</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.1</CtrlKeyMultiplier>
+				<AxisDevice>rotAXYS360_1_Radius</AxisDevice>
+			</YAxis>
+			<ZAxis>
+				<BaseSpeed>-2.5</BaseSpeed>
+				<ShiftKeyMultiplier>4</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.4</CtrlKeyMultiplier>
+				<AxisDevice>rotAXYS360_1_Lift</AxisDevice>
+			</ZAxis>
+		</SixWayButtonAxisAdapter>
+		<TDxAxisControl>
+			<Translation>
+				<YAxis Speed="-30" Deadzone="0.2"/>
+				<ZAxis Speed="-10" Deadzone="0.2"/>
+			</Translation>
+			<Rotation>
+				<ZAxis Speed="10" Deadzone="0.2"/>
+			</Rotation>
+			<InhibitTime>200</InhibitTime>
+		</TDxAxisControl>
+	</PositioningWidget>
+	<log4cplus>log4cplus.logger.Rotaxys360Logger=WARN, LogAppender</log4cplus>
+	<PluginLogger>Rotaxys360Logger</PluginLogger>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="rotAXYS360" NodeId="29" ManualNodeId="false" Index="27" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

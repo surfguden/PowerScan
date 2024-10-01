@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+    <labbCAN>
+        <DeviceList>
+		</DeviceList>
+        <ChannelList>
+        </ChannelList>
+    </labbCAN>
+    <DeviceList>
+    </DeviceList>
+    <log4cplus>
+        log4cplus.logger.DrivesLogger=WARN, LogAppender
+    </log4cplus>
+    <PluginLogger>DrivesLogger</PluginLogger>
+</Plugin>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="neMESYS_Starter_1_EposDrive">
+				<Type>Nemesys::CNemesysAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="2">Usl::Epos::CEposDrive</CANopenDevice>
+				<ReadAxisConfigFromDevice>1</ReadAxisConfigFromDevice>
+				<ProductType comment="neMESYS_STD">0</ProductType>
+				<MaxAcceleration>200000</MaxAcceleration>
+				<MinimumAbsoluteVelocity>1</MinimumAbsoluteVelocity>
+				<Simulated>0</Simulated>
+				<HomingMethod comment="Positive Limit">18</HomingMethod>
+				<ObjDictEntries>
+					<ObjDictEntry Index="6086" SubIndex="0" Value="0" Size="2" comment="Motion Profile Type Trapezoidal"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="neMESYS_Starter_1_Valve">
+				<Type>Lcl::CValveWithVoltageDrop</Type>
+				<DigitalOutDevice>neMESYS_Starter_1_EposDriveDigitalOut</DigitalOutDevice>
+				<VoltageLowerageTime>1000</VoltageLowerageTime>
+				<PositionBitfields>
+					<Position>0x0</Position>
+					<Position>0x1000</Position>
+				</PositionBitfields>
+				<DigitalOutHighVoltage>13</DigitalOutHighVoltage>
+				<InputPositionIndex>1</InputPositionIndex>
+				<OutputPositionIndex>0</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+			</Device>
+			<Device Name="neMESYS_Starter_1_Pump">
+				<Type>Lcl::CNemesysEposSyringePump</Type>
+				<DriveDevice>neMESYS_Starter_1_EposDrive</DriveDevice>
+				<Syringe PistonStroke_mm="60" InnerDiameter_mm="5"/>
+				<Valve>neMESYS_Starter_1_Valve</Valve>
+				<ProductType comment="neMESYS_STD">0</ProductType>
+			</Device>
+		</DeviceList>
+		<ChannelList/>
+	</labbCAN>
+	<DosingModuleList>
+		<DosingModule Name="neMESYS_Starter_1">
+			<Type>Nemesys::CNemesysSyringePump</Type>
+			<Caption>neMESYS Starter 1</Caption>
+			<LabbCANPump>neMESYS_Starter_1_Pump</LabbCANPump>
+			<PumpStopDelay>200</PumpStopDelay>
+			<Syringe ScaleVolume_ml="1.0" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="37" Caption="1.0ml Glass"/>
+			<Valve>
+				<labbCANDevice>neMESYS_Starter_1_Valve</labbCANDevice>
+				<PositionIcon>3x2Way_Asco</PositionIcon>
+			</Valve>
+		</DosingModule>
+	</DosingModuleList>
+	<IoDeviceList/>
+	<log4cplus>&#10;            log4cplus.logger.NemesysLogger=WARN, LogAppender;&#10;            log4cplus.logger.ContiFlowLogger=WARN, LogAppender;&#10;            log4cplus.logger.Nemesys2XLStateMachineLogger=WARN, LogAppender;&#10;        </log4cplus>
+	<PluginLogger>NemesysLogger</PluginLogger>
+	<DefaultSyringes>
+		<Syringe ScaleVolume_ml="0.1" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="97" Caption="100µl Glass"/>
+		<Syringe ScaleVolume_ml="0.25" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="77" Caption="250µl Glass"/>
+		<Syringe ScaleVolume_ml="0.5" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="58" Caption="500µl Glass"/>
+		<Syringe ScaleVolume_ml="1.0" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="37" Caption="1.0ml Glass"/>
+		<Syringe ScaleVolume_ml="2.5" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="23" Caption="2.5ml Glass"/>
+		<Syringe ScaleVolume_ml="5.0" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="17" Caption="5.0ml Glass"/>
+		<Syringe ScaleVolume_ml="10" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="13" Caption="10.0ml Glass"/>
+		<Syringe ScaleVolume_ml="25" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="11" Caption="25.0ml Glass"/>
+		<Syringe ScaleVolume_ml="50" ScaleLength_mm="60" MaxStroke_mm="60" Material="Glass" MaxLevel_mm="60" PumpType="255" MaxPressure_bar="8" Caption="50.0ml Glass"/>
+		<Syringe ScaleVolume_ml="1" ScaleLength_mm="51.26" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="1" MaxPressure_bar="200" Caption="1.0ml Steel Mid Pressure"/>
+		<Syringe ScaleVolume_ml="2.5" ScaleLength_mm="49.99" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="1" MaxPressure_bar="200" Caption="2.5ml Steel Mid Pressure"/>
+		<Syringe ScaleVolume_ml="5" ScaleLength_mm="52.85" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="1" MaxPressure_bar="100" Caption="5.0ml Steel Mid Pressure"/>
+		<Syringe ScaleVolume_ml="10" ScaleLength_mm="49.89" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="1" MaxPressure_bar="50" Caption="10.0ml Steel Mid Pressure"/>
+		<Syringe ScaleVolume_ml="25" ScaleLength_mm="50.86" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="1" MaxPressure_bar="20" Caption="25.0ml Steel Mid Pressure"/>
+		<Syringe ScaleVolume_ml="50" ScaleLength_mm="51.91" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="1" MaxPressure_bar="10" Caption="50.0ml Steel Mid Pressure"/>
+		<Syringe ScaleVolume_ml="2.5" ScaleLength_mm="49.99" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="2" MaxPressure_bar="510" Caption="2.5ml Steel High Pressure"/>
+		<Syringe ScaleVolume_ml="5" ScaleLength_mm="52.85" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="2" MaxPressure_bar="220" Caption="5.0ml Steel High Pressure"/>
+		<Syringe ScaleVolume_ml="10" ScaleLength_mm="49.89" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="2" MaxPressure_bar="120" Caption="10.0ml Steel High Pressure"/>
+		<Syringe ScaleVolume_ml="25" ScaleLength_mm="50.86" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="2" MaxPressure_bar="50" Caption="25.0ml Steel High Pressure"/>
+		<Syringe ScaleVolume_ml="50" ScaleLength_mm="51.91" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="2" MaxPressure_bar="25" Caption="50.0ml Steel High Pressure"/>
+		<Syringe ScaleVolume_ml="100" ScaleLength_mm="50.89" MaxStroke_mm="60" Material="Steel" MaxLevel_mm="60" PumpType="2" MaxPressure_bar="12" Caption="100ml Steel High Pressure"/>
+		<Syringe ScaleVolume_ml="10" ScaleLength_mm="127.85" MaxStroke_mm="127.85" Material="Steel" MaxLevel_mm="127.85" PumpType="3" MaxPressure_bar="900" Caption="10ml Steel Ultra High Pressure"/>
+		<Syringe ScaleVolume_ml="25" ScaleLength_mm="124.34" MaxStroke_mm="124.34" Material="Steel" MaxLevel_mm="124.34" PumpType="3" MaxPressure_bar="350" Caption="25ml Steel Ultra High Pressure"/>
+		<Syringe ScaleVolume_ml="100" ScaleLength_mm="124.34" MaxStroke_mm="124.34" Material="Steel" MaxLevel_mm="124.34" PumpType="3" MaxPressure_bar="85" Caption="100ml Steel Ultra High Pressure"/>
+		<Syringe ScaleVolume_ml="250" ScaleLength_mm="127.32" MaxStroke_mm="127.32" Material="Steel" MaxLevel_mm="127.32" PumpType="3" MaxPressure_bar="35" Caption="250ml Steel Ultra High Pressure"/>
+		<Syringe ScaleVolume_ml="100" ScaleLength_mm="203.7183272" MaxStroke_mm="204" Material="Steel" MaxLevel_mm="204" PumpType="4" MaxPressure_bar="1500" Caption="100ml Steel 2XL"/>
+	</DefaultSyringes>
+	<IoChannelPresets>
+		<Preset Name="0..6bar (500..4500mV)" Caption="Pressure: 0..6bar (500..4500mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="6"/>
+			<Scaling x1="500" y1="0" x2="4500" y2="6"/>
+		</Preset>
+		<Preset Name="0..250bar (500..4500mV)" Caption="Pressure: 0..250bar (500..4500mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="250"/>
+			<Scaling x1="500" y1="0" x2="4500" y2="250"/>
+		</Preset>
+		<Preset Name="-1..5bar (0..5000mV)" Caption="Pressure: -1..5bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="-1" Max="5"/>
+			<Scaling x1="0" y1="-1" x2="5000" y2="5"/>
+		</Preset>
+		<Preset Name="0..6bar (0..5000mV)" Caption="Pressure: 0..6bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="6"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="6"/>
+		</Preset>
+		<Preset Name="0..40bar (0..5000mV)" Caption="Pressure: 0..40bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="40"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="40"/>
+		</Preset>
+		<Preset Name="0..60bar (0..5000mV)" Caption="Pressure: 0..60bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="60"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="60"/>
+		</Preset>
+		<Preset Name="0..100bar (0..5000mV)" Caption="Pressure: 0..100bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="100"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="100"/>
+		</Preset>
+		<Preset Name="0..250bar (0..5000mV)" Caption="Pressure: 0..250bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="250"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="250"/>
+		</Preset>
+		<Preset Name="0..600bar (0..5000mV)" Caption="Pressure: 0..600bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="600"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="600"/>
+		</Preset>
+		<Preset Name="0..1000bar (0..5000mV)" Caption="Pressure: 0..1000bar (0..5000mV)" DeviceSiSymbol="U">
+			<Icon>deviceicon_pressure2</Icon>
+			<ScaledValue SiSymbol="p" Unit="bar" Decimals="1" Min="0" Max="1000"/>
+			<Scaling x1="0" y1="0" x2="5000" y2="1000"/>
+		</Preset>
+	</IoChannelPresets>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="neMESYS_Starter" NodeId="2" ManualNodeId="false" Index="0" DeviceId="1" Simulated="false" SerialNumber="" DrawingNumber="" Configured="true"/>
+	</QmixDevices>
+</MetaInfo>

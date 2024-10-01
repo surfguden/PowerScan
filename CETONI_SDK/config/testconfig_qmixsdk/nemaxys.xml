@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaInfo>
+	<RequiredPlugins>
+		<Plugin Name="qmixio"/>
+		<Plugin Name="qmixv"/>
+		<Plugin Name="qmixcontroller"/>
+	</RequiredPlugins>
+	<AdditionaPlugins>
+		<Plugin Name="spacenavigator" LoadOrder="1"/>
+		<Plugin Name="drives" LoadOrder="1"/>
+	</AdditionaPlugins>
+	<QmixDevices>
+		<QmixDevice Type="neMAXYS" NodeId="-1" ManualNodeId="false" Index="26" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="neMAXYS1_X">
+				<Type>Lcl::CEposAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="33">Usl::Epos::CEposDrive</CANopenDevice>
+				<RevolutionsPerMeter>250</RevolutionsPerMeter>
+				<MinPosition>0</MinPosition>
+				<MaxPosition>102400</MaxPosition>
+				<MaxVelocity>3000</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>2048</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRevolution>1</VelocityUnitsPerRevolution>
+				<TimeUnitsPerMinute>1</TimeUnitsPerMinute>
+				<HomingPriority>0</HomingPriority>
+				<ReadAxisConfigFromDevice>0</ReadAxisConfigFromDevice>
+				<Simulated>1</Simulated>
+			</Device>
+			<Device Name="neMAXYS1_Y">
+				<Type>Lcl::CEposAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="34">Usl::Epos::CEposDrive</CANopenDevice>
+				<RevolutionsPerMeter>250</RevolutionsPerMeter>
+				<MinPosition>0</MinPosition>
+				<MaxPosition>100000</MaxPosition>
+				<MaxVelocity>3000</MaxVelocity>
+				<PositionPolarity>-1</PositionPolarity>
+				<PositionUnitsPerRevolution>2000</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRevolution>1</VelocityUnitsPerRevolution>
+				<TimeUnitsPerMinute>1</TimeUnitsPerMinute>
+				<HomingPriority>0</HomingPriority>
+				<ReadAxisConfigFromDevice>0</ReadAxisConfigFromDevice>
+				<Simulated>1</Simulated>
+			</Device>
+			<Device Name="neMAXYS1_Z">
+				<Type>Lcl::CEposAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="35">Usl::Epos::CEposDrive</CANopenDevice>
+				<RevolutionsPerMeter>1000</RevolutionsPerMeter>
+				<MinPosition>-100000</MinPosition>
+				<MaxPosition>0</MaxPosition>
+				<MaxVelocity>1500</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>2000</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRevolution>1</VelocityUnitsPerRevolution>
+				<TimeUnitsPerMinute>1</TimeUnitsPerMinute>
+				<HomingPriority>1</HomingPriority>
+				<ReadAxisConfigFromDevice>0</ReadAxisConfigFromDevice>
+				<Simulated>1</Simulated>
+			</Device>
+			<Device Name="neMAXYS1">
+				<Type>Lcl::CMultiAxisSystem</Type>
+				<AxisList>
+					<Axis Device="neMAXYS1_X"/>
+					<Axis Device="neMAXYS1_Y"/>
+					<Axis Device="neMAXYS1_Z"/>
+				</AxisList>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="neMAXYS1_DigIN2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>neMAXYS1_YDigitalIn</Device>
+				<ChannelNo>14</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_DigIN3">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>neMAXYS1_YDigitalIn</Device>
+				<ChannelNo>13</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_DigIN4">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>neMAXYS1_YDigitalIn</Device>
+				<ChannelNo>12</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_EmergencyStop">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>neMAXYS1_YDigitalIn</Device>
+				<ChannelNo>4</ChannelNo>
+				<Inverted>1</Inverted>
+			</Channel>
+			<Channel Name="neMAXYS1_DigOUT1">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>neMAXYS1_YDigitalOut</Device>
+				<ChannelNo>15</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_DigOUT2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>neMAXYS1_YDigitalOut</Device>
+				<ChannelNo>14</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_DigOUT3">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>neMAXYS1_YDigitalOut</Device>
+				<ChannelNo>13</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_DigOUT4">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>neMAXYS1_YDigitalOut</Device>
+				<ChannelNo>12</ChannelNo>
+			</Channel>
+			<Channel Name="neMAXYS1_AnIN1">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>neMAXYS1_YAnalogIn</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Factor="1" Offset="0"/>
+			</Channel>
+			<Channel Name="neMAXYS1_AnIN2">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>neMAXYS1_YAnalogIn</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Factor="1" Offset="0"/>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<neMAXYS>
+		<DeviceList>
+			<AxisSystem Name="neMAXYS1">
+				<AxisList>
+					<Axis LabbCANAxisName="neMAXYS1_X"/>
+					<Axis LabbCANAxisName="neMAXYS1_Y"/>
+					<Axis LabbCANAxisName="neMAXYS1_Z"/>
+				</AxisList>
+				<SampleHolder Name="neMAXYS1_SampleHolder">
+					<SamplePosition>
+						<Center X="0" Y="-90" Z="0"/>
+						<Rotation>0</Rotation>
+					</SamplePosition>
+					<Center X="0" Y="0" Z="0"/>
+					<Length>127.5</Length>
+					<Width>85.3</Width>
+					<Height>12</Height>
+					<Rotation>0</Rotation>
+				</SampleHolder>
+				<AutoHoming>1</AutoHoming>
+			</AxisSystem>
+		</DeviceList>
+	</neMAXYS>
+	<PositioningWidget>
+		<OptimizeForTouch>0</OptimizeForTouch>
+		<SampleItemPosition X="70.7" Y="50.5"/>
+		<XYPositionSeeker>neMAXYS1</XYPositionSeeker>
+		<ConnectPosMapTargetSignal>1</ConnectPosMapTargetSignal>
+		<PositioningMap>
+			<RulersVisible>false</RulersVisible>
+			<AutoFit>true</AutoFit>
+			<NavButtonVisible>true</NavButtonVisible>
+			<NavButtonSizePx>120</NavButtonSizePx>
+			<ImageFileName>:/nemaxys/images/positioningmap_nemaxys_sas.png</ImageFileName>
+			<DotsPerMeterX>6964.705882</DotsPerMeterX>
+			<DotsPerMeterY>6964.705882</DotsPerMeterY>
+			<InvertedX>false</InvertedX>
+			<InvertedY>false</InvertedY>
+			<MarkerOffsetX>0</MarkerOffsetX>
+			<MarkerOffsetY>0</MarkerOffsetY>
+			<TravelAreaRect>
+				<MeasuringUnit>Millimeters</MeasuringUnit>
+				<Left>14</Left>
+				<Top>5</Top>
+				<Width>142</Width>
+				<Height>151</Height>
+				<OriginID>0</OriginID>
+			</TravelAreaRect>
+			<PositionSelectionColor>00FF00</PositionSelectionColor>
+			<TargetPositionColor>FFBE00</TargetPositionColor>
+			<ActualPositionColor>00FF00</ActualPositionColor>
+		</PositioningMap>
+		<SixWayButtonAxisAdapter>
+			<XAxis>
+				<BaseSpeed>10</BaseSpeed>
+				<ShiftKeyMultiplier>2</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.1</CtrlKeyMultiplier>
+				<AxisDevice>neMAXYS1_X</AxisDevice>
+			</XAxis>
+			<YAxis>
+				<BaseSpeed>10</BaseSpeed>
+				<ShiftKeyMultiplier>2</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.1</CtrlKeyMultiplier>
+				<AxisDevice>neMAXYS1_Y</AxisDevice>
+			</YAxis>
+			<ZAxis>
+				<BaseSpeed>-2.5</BaseSpeed>
+				<ShiftKeyMultiplier>4</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.4</CtrlKeyMultiplier>
+				<AxisDevice>neMAXYS1_Z</AxisDevice>
+			</ZAxis>
+		</SixWayButtonAxisAdapter>
+		<TDxAxisControl>
+			<Translation>
+				<XAxis Speed="20" Deadzone="0.2"/>
+				<YAxis Speed="20" Deadzone="0.2"/>
+				<ZAxis Speed="-20" Deadzone="0.2"/>
+			</Translation>
+			<InhibitTime>200</InhibitTime>
+		</TDxAxisControl>
+	</PositioningWidget>
+	<IoDeviceList>
+		<Device Name="neMAXYS1_DigIN2">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<DigInChannel>neMAXYS1_DigIN2</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_DigIN3">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<DigInChannel>neMAXYS1_DigIN3</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_DigIN4">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<DigInChannel>neMAXYS1_DigIN4</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_Emergency_Stop">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<DigInChannel>neMAXYS1_EmergencyStop</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_DigOUT1">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<DigOutChannel>neMAXYS1_DigOUT1</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_DigOUT2">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<DigOutChannel>neMAXYS1_DigOUT2</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_DigOUT3">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<DigOutChannel>neMAXYS1_DigOUT3</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_DigOUT4">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<DigOutChannel>neMAXYS1_DigOUT4</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_AnIN1">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<AnalogInChannel>neMAXYS1_AnIN1</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>5000</MaxValue>
+			<Unit>mV</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="neMAXYS1_AnIN2">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<AnalogInChannel>neMAXYS1_AnIN2</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>5000</MaxValue>
+			<Unit>mV</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+		</Device>
+	</IoDeviceList>
+	<log4cplus>log4cplus.logger.NemaxysLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>NemaxysLogger</PluginLogger>
+</Plugin>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="rotAXYS_1_Lift">
+				<Type>Lcl::CTmcmAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="32">Usl::Trinamic::CTmcmTripleAxisStepperModule</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<IO DigOut="0" DigIn="1"/>
+				<LogicalDevice>0</LogicalDevice>
+				<RevolutionsPerMeter>1666.666667</RevolutionsPerMeter>
+				<MinPosition>0</MinPosition>
+				<MaxPosition comment="This value allows us to move into the upper limit sensor">27600</MaxPosition>
+				<MaxVelocity>293</MaxVelocity>
+				<PositionPolarity>-1</PositionPolarity>
+				<PositionUnitsPerRevolution comment="24 Fullsteps * 64 µsr">1536</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRPM comment="24 / 200">0.12</VelocityUnitsPerRPM>
+				<AccelerationUnitsPerRPSperS comment="24 / 200 * 60s">7.2</AccelerationUnitsPerRPSperS>
+				<Simulated>true</Simulated>
+				<PDOConfig>
+					<RPDO No="0" Mapped="60400010" comment="Controloword"/>
+					<RPDO No="1" Mapped="607A0020" comment="Target Position"/>
+					<RPDO No="2" Mapped="60600008" comment="Modes of operation"/>
+					<TPDO No="0" Inhibit="0" Mapped="60410010" Mapped="60610008" comment="Statusword, Modes of operation display"/>
+					<TPDO No="1" Inhibit="1000" Mapped="60640020" comment="Position Actual"/>
+					<TPDO No="2" Inhibit="0" Mapped="27020020" comment="Device digital inputs"/>
+				</PDOConfig>
+				<ObjDictEntries>
+					<ObjDictEntry Index="208C" SubIndex="0" Value="164" Size="1" comment="Velocity Dimension Index - 164 = RPM and acceleration RPM/s"/>
+					<ObjDictEntry Index="2003" SubIndex="0" Value="89" Size="1" comment="Fraction of maximum current 385 mA * 255 / 1100 mA"/>
+					<ObjDictEntry Index="2004" SubIndex="0" Value="20" Size="1" comment="Standby Current Percent"/>
+					<ObjDictEntry Index="2005" SubIndex="0" Value="3" Size="4" comment="Limit Switches Disable"/>
+					<ObjDictEntry Index="6067" SubIndex="0" Value="0" Size="4" comment="Position Window"/>
+					<ObjDictEntry Index="607C" SubIndex="0" Value="27200" Size="4" comment="Home Offset"/>
+					<ObjDictEntry Index="6083" SubIndex="0" Value="800" Size="4" comment="Profile Acceleration"/>
+					<ObjDictEntry Index="6098" SubIndex="0" Value="19" Size="1" comment="Homing Method"/>
+					<ObjDictEntry Index="6099" SubIndex="1" Value="100" Size="4" comment="Fast Homing Speed"/>
+					<ObjDictEntry Index="6099" SubIndex="2" Value="32" Size="4" comment="Slow Homing Speed"/>
+					<ObjDictEntry Index="609A" SubIndex="0" Value="800" Size="4" comment="Homing Acceleration"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="rotAXYS_1_Rotation">
+				<Type>Lcl::CTmcmAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="32">Usl::Trinamic::CTmcmTripleAxisStepperModule</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<LogicalDevice>1</LogicalDevice>
+				<RevolutionsPerMeter>1</RevolutionsPerMeter>
+				<MinPosition>-9160</MinPosition>
+				<MaxPosition>-1700</MaxPosition>
+				<MaxVelocity>150</MaxVelocity>
+				<PositionPolarity>-1</PositionPolarity>
+				<PositionUnitsPerRevolution>25600</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRPM>2</VelocityUnitsPerRPM>
+				<AccelerationUnitsPerRPSperS comment="2 * 60s">120</AccelerationUnitsPerRPSperS>
+				<Simulated>true</Simulated>
+				<ObjDictEntries>
+					<ObjDictEntry Index="228C" SubIndex="0" Value="164" Size="1" comment="Velocity Dimension Index - 164 = RPM and acceleration RPM/s"/>
+					<ObjDictEntry Index="2203" SubIndex="0" Value="64" Size="1" comment="Maximum Current Percent"/>
+					<ObjDictEntry Index="2204" SubIndex="0" Value="40" Size="1" comment="Standby Current Percent"/>
+					<ObjDictEntry Index="2205" SubIndex="0" Value="3" Size="4" comment="Limit Switches Disable"/>
+					<ObjDictEntry Index="6867" SubIndex="0" Value="0" Size="4" comment="Position Window"/>
+					<ObjDictEntry Index="687C" SubIndex="0" Value="-9160" Size="4" comment="Home Offset"/>
+					<ObjDictEntry Index="6883" SubIndex="0" Value="300" Size="4" comment="Profile Acceleration"/>
+					<ObjDictEntry Index="6898" SubIndex="0" Value="21" Size="1" comment="Homing Method"/>
+					<ObjDictEntry Index="6899" SubIndex="1" Value="10" Size="4" comment="Fast Homing Speed"/>
+					<ObjDictEntry Index="6899" SubIndex="2" Value="10" Size="4" comment="Slow Homing Speed"/>
+					<ObjDictEntry Index="689A" SubIndex="0" Value="300" Size="4" comment="Homing Acceleration"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="rotAXYS_1_Radius">
+				<Type>Lcl::CTmcmAxis</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="32">Usl::Trinamic::CTmcmTripleAxisStepperModule</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<LogicalDevice>2</LogicalDevice>
+				<RevolutionsPerMeter>31.25</RevolutionsPerMeter>
+				<MinPosition>17000</MinPosition>
+				<MaxPosition>57800</MaxPosition>
+				<MaxVelocity>293</MaxVelocity>
+				<PositionPolarity>1</PositionPolarity>
+				<PositionUnitsPerRevolution>12800</PositionUnitsPerRevolution>
+				<VelocityUnitsPerRevolution>419.430400000000</VelocityUnitsPerRevolution>
+				<VelocityUnitsPerRPM>1</VelocityUnitsPerRPM>
+				<AccelerationUnitsPerRPSperS comment="1 * 60s">60</AccelerationUnitsPerRPSperS>
+				<Simulated>true</Simulated>
+				<ObjDictEntries>
+					<ObjDictEntry Index="248C" SubIndex="0" Value="164" Size="1" comment="Velocity Dimension Index - 164 = RPM and acceleration RPM/s"/>
+					<ObjDictEntry Index="2403" SubIndex="0" Value="128" Size="1" comment="Maximum Current Percent"/>
+					<ObjDictEntry Index="2404" SubIndex="0" Value="20" Size="1" comment="Standby Current Percent"/>
+					<ObjDictEntry Index="2405" SubIndex="0" Value="3" Size="4" comment="Limit Switches Disable"/>
+					<ObjDictEntry Index="7067" SubIndex="0" Value="0" Size="4" comment="Position Window"/>
+					<ObjDictEntry Index="707C" SubIndex="0" Value="-16000" Size="4" comment="Home Offset"/>
+					<ObjDictEntry Index="7083" SubIndex="0" Value="2400" Size="4" comment="Profile Acceleration"/>
+					<ObjDictEntry Index="7098" SubIndex="0" Value="35" Size="1" comment="Homing Method"/>
+					<ObjDictEntry Index="7099" SubIndex="1" Value="293" Size="4" comment="Fast Homing Speed"/>
+					<ObjDictEntry Index="7099" SubIndex="2" Value="32" Size="4" comment="Slow Homing Speed"/>
+					<ObjDictEntry Index="709A" SubIndex="0" Value="2400" Size="4" comment="Homing Acceleration"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="rotAXYS_1">
+				<Type>Lcl::CRotaxys</Type>
+				<LiftAxis>rotAXYS_1_Lift</LiftAxis>
+				<RotationAxis>rotAXYS_1_Rotation</RotationAxis>
+				<RadiusAxis>rotAXYS_1_Radius</RadiusAxis>
+				<JibLength>-18</JibLength>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="rotAXYS_1_UpperLimit">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>rotAXYS_1_LiftDigitalIn</Device>
+				<ChannelNo>16</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<AxisSystem Name="rotAXYS_1">
+			<Caption>rotAXYS 1</Caption>
+			<Type>Rotaxys::CRotaxysAxisSystem</Type>
+			<LinearAxis>
+				<LabbCANAxisName>rotAXYS_1_Radius</LabbCANAxisName>
+			</LinearAxis>
+			<RotationAxis>
+				<LabbCANAxisName>rotAXYS_1_Rotation</LabbCANAxisName>
+			</RotationAxis>
+			<LiftAxis>
+				<LabbCANAxisName>rotAXYS_1_Lift</LabbCANAxisName>
+			</LiftAxis>
+			<WrapAroundMode>MODE_SINGLE_ROTATION</WrapAroundMode>
+			<SafeRotate>1</SafeRotate>
+			<RotationSplitPoint>360</RotationSplitPoint>
+			<JibLength>-18</JibLength>
+			<SampleHolder>
+				<Name>rotAXYS_1SampleHolder</Name>
+				<SamplePosition>
+					<Center X="0" Y="-90" Z="0"/>
+					<Rotation>0</Rotation>
+				</SamplePosition>
+				<Center X="0" Y="0" Z="0"/>
+				<Length>127.5</Length>
+				<Width>85.3</Width>
+				<Height>12</Height>
+				<Rotation>0</Rotation>
+			</SampleHolder>
+			<AutoHoming>1</AutoHoming>
+			<DeviceList>
+				<Device Name="rotAXYS_1_UpperLimit">
+					<Caption>rotAXYS 1 Upper Limit Sensor</Caption>
+					<Type>QtLabb::CDigitalInChannelDevice</Type>
+					<DigInChannel>rotAXYS_1_UpperLimit</DigInChannel>
+					<Color>FF00FF00</Color>
+				</Device>
+			</DeviceList>
+		</AxisSystem>
+	</DeviceList>
+	<PositioningWidget>
+		<OptimizeForTouch>0</OptimizeForTouch>
+		<SampleItemPosition X="0" Y="-90"/>
+		<XYPositionSeeker>rotAXYS_1</XYPositionSeeker>
+		<ConnectPosMapTargetSignal>1</ConnectPosMapTargetSignal>
+		<PositioningMap>
+			<RulersVisible>false</RulersVisible>
+			<AutoFit>true</AutoFit>
+			<NavButtonVisible>true</NavButtonVisible>
+			<NavButtonSizePx>120</NavButtonSizePx>
+			<Image File=":/rotaxys/images/positioningmap_rotaxys.png" DotsPerMeter="6800" PosX="-70" PosY="-140"/>
+			<PositionSelectionColor>00FF00</PositionSelectionColor>
+			<TargetPositionColor>FFBE00</TargetPositionColor>
+			<ActualPositionColor>00FF00</ActualPositionColor>
+		</PositioningMap>
+		<SixWayButtonAxisAdapter>
+			<XAxis>
+				<BaseSpeed>10</BaseSpeed>
+				<ShiftKeyMultiplier>2</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.1</CtrlKeyMultiplier>
+				<AxisDevice>rotAXYS_1_Rotation</AxisDevice>
+			</XAxis>
+			<YAxis>
+				<BaseSpeed>-10</BaseSpeed>
+				<ShiftKeyMultiplier>2</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.1</CtrlKeyMultiplier>
+				<AxisDevice>rotAXYS_1_Radius</AxisDevice>
+			</YAxis>
+			<ZAxis>
+				<BaseSpeed>-2.5</BaseSpeed>
+				<ShiftKeyMultiplier>4</ShiftKeyMultiplier>
+				<CtrlKeyMultiplier>0.4</CtrlKeyMultiplier>
+				<AxisDevice>rotAXYS_1_Lift</AxisDevice>
+			</ZAxis>
+		</SixWayButtonAxisAdapter>
+		<TDxAxisControl>
+			<Translation>
+				<YAxis Speed="-30" Deadzone="0.2"/>
+				<ZAxis Speed="-10" Deadzone="0.2"/>
+			</Translation>
+			<Rotation>
+				<ZAxis Speed="10" Deadzone="0.2"/>
+			</Rotation>
+			<InhibitTime>200</InhibitTime>
+		</TDxAxisControl>
+	</PositioningWidget>
+	<log4cplus>log4cplus.logger.RotaxisLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>RotaxisLogger</PluginLogger>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="rotAXYS" NodeId="32" ManualNodeId="false" Index="28" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

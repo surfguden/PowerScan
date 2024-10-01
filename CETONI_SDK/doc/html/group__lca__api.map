@@ -1,0 +1,12 @@
+<map id="labbCAN Motion Control API" name="labbCAN Motion Control API">
+<area shape="rect" id="node1" href="$group__lca__posunit.html" title="Defines common position units for all axis devices. " alt="" coords="277,5,379,33"/>
+<area shape="rect" id="node3" href="$group__lca__posmark.html" title="Position marker functionality. " alt="" coords="272,55,384,83"/>
+<area shape="rect" id="node4" href="$group__lca__status.html" title="Status query functions. " alt="" coords="299,106,357,134"/>
+<area shape="rect" id="node5" href="$group__lca__configuration.html" title="Axis system configuration functions This groups defines all functions to configure labCAN axis system..." alt="" coords="240,157,416,185"/>
+<area shape="rect" id="node6" href="$group__lca__error.html" title="Error handling functions. " alt="" coords="276,207,380,235"/>
+<area shape="rect" id="node7" href="$group__lca__prefix.html" title="Prefix constants for SI position and velocity unit specification. " alt="" coords="269,258,387,286"/>
+<area shape="rect" id="node8" href="$group__lca__motion.html" title="Motion functions for moving single axes or the whole positioning system. " alt="" coords="299,309,357,337"/>
+<area shape="rect" id="node9" href="$group__lca__timeunit.html" title="Time unit identifies for velocity. " alt="" coords="287,359,369,387"/>
+<area shape="rect" id="node10" href="$group__lca__api__initialisation.html" title="API specific initialization functions. " alt="" coords="271,410,385,438"/>
+<area shape="rect" id="node11" href="$group__lca__initialisation.html" title="Axis system specific initialization functions This groups defines all functions to setup and initiali..." alt="" coords="244,461,412,489"/>
+</map>

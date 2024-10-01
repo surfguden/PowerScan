@@ -1,0 +1,8 @@
+{
+    "terminal.integrated.env.windows": { 
+        "QMIXSDK" : "C:/temp/sdk",
+    },
+
+    "python.pythonPath": "C:\\CodingXP\\Python38-32\\python.exe",
+    "python.analysis.extraPaths": ["qmixsdk"]
+}

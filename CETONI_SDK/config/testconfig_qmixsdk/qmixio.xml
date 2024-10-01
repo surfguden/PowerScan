@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding=""?>
+<Plugin Valid="true">
+	<labbCAN>
+		<PluginList/>
+		<DeviceList>
+			<Device Name="QmixP_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="25">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixP_1_AI</AnalogInName>
+				<Simulated>true</Simulated>
+			</Device>
+			<Device Name="QmixIO_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="26">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixIO_1_AI</AnalogInName>
+				<AnalogOutName>QmixIO_1_AO</AnalogOutName>
+				<DigitalOutName>QmixIO_1_DO</DigitalOutName>
+				<DigitalInName>QmixIO_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+			</Device>
+			<Device Name="QmixIO_1_Valve0">
+				<Type>Lcl::CValveWithVoltageDrop</Type>
+				<DigitalOutDevice>QmixIO_1_DO</DigitalOutDevice>
+				<VoltageLowerageTime>1000</VoltageLowerageTime>
+				<PositionBitfields>
+					<Position>0x0</Position>
+					<Position>0x1</Position>
+				</PositionBitfields>
+				<DigitalOutHighVoltage>1</DigitalOutHighVoltage>
+				<InputPositionIndex>1</InputPositionIndex>
+				<OutputPositionIndex>0</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+			</Device>
+			<Device Name="QmixIO_1_Valve1">
+				<Type>Lcl::CValveWithVoltageDrop</Type>
+				<DigitalOutDevice>QmixIO_1_DO</DigitalOutDevice>
+				<VoltageLowerageTime>1000</VoltageLowerageTime>
+				<PositionBitfields>
+					<Position>0x0</Position>
+					<Position>0x4</Position>
+				</PositionBitfields>
+				<DigitalOutHighVoltage>3</DigitalOutHighVoltage>
+				<InputPositionIndex>1</InputPositionIndex>
+				<OutputPositionIndex>0</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+			</Device>
+			<Device Name="QmixIO_1_Valve2">
+				<Type>Lcl::CValveWithVoltageDrop</Type>
+				<DigitalOutDevice>QmixIO_1_DO</DigitalOutDevice>
+				<VoltageLowerageTime>1000</VoltageLowerageTime>
+				<PositionBitfields>
+					<Position>0x0</Position>
+					<Position>0x10</Position>
+				</PositionBitfields>
+				<DigitalOutHighVoltage>5</DigitalOutHighVoltage>
+				<InputPositionIndex>1</InputPositionIndex>
+				<OutputPositionIndex>0</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+			</Device>
+			<Device Name="QmixIO_1_Valve3">
+				<Type>Lcl::CValveWithVoltageDrop</Type>
+				<DigitalOutDevice>QmixIO_1_DO</DigitalOutDevice>
+				<VoltageLowerageTime>1000</VoltageLowerageTime>
+				<PositionBitfields>
+					<Position>0x0</Position>
+					<Position>0x40</Position>
+				</PositionBitfields>
+				<DigitalOutHighVoltage>7</DigitalOutHighVoltage>
+				<InputPositionIndex>1</InputPositionIndex>
+				<OutputPositionIndex>0</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+			</Device>
+			<Device Name="QmixIO_B_1">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="27">Usl::CBeckhoffBK51xx</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixIO_B_1_AI</AnalogInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+			</Device>
+			<Device Name="Beckhoff_IO_1">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="28">Usl::CBeckhoffBK51xx</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>Beckhoff_IO_1_AI</AnalogInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="QmixP_1_AI0">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixP_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling x1="3277" y1="0" x2="29490" y2="20"/>
+			</Channel>
+			<Channel Name="QmixP_1_AI1">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixP_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling x1="3277" y1="0" x2="29489" y2="20"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI0">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling x1="0" y1="0" x2="32768" y2="10"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI1">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling x1="0" y1="0" x2="32768" y2="10"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI2">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>2</ChannelNo>
+				<Scaling x1="0" y1="0" x2="32768" y2="10"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI3">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>3</ChannelNo>
+				<Scaling x1="0" y1="0" x2="32768" y2="10"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI4">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>4</ChannelNo>
+				<Scaling x1="0" y1="0" x2="32768" y2="10"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI5">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>5</ChannelNo>
+				<Scaling x1="0" y1="0" x2="32768" y2="10"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI6">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>6</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AI7">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_1_AI</Device>
+				<ChannelNo>7</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixIO_1_AO0_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixIO_1_AO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling x1="0" y1="0" x2="65535" y2="10"/>
+				<OutputValueMax>65535</OutputValueMax>
+				<OutputValueMin>0</OutputValueMin>
+			</Channel>
+			<Channel Name="QmixIO_1_AO1_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixIO_1_AO</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling x1="0" y1="0" x2="65535" y2="10"/>
+				<OutputValueMax>65535</OutputValueMax>
+				<OutputValueMin>0</OutputValueMin>
+			</Channel>
+			<Channel Name="QmixIO_1_AO2_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixIO_1_AO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Scaling x1="0" y1="0" x2="65535" y2="10"/>
+				<OutputValueMax>65535</OutputValueMax>
+				<OutputValueMin>0</OutputValueMin>
+			</Channel>
+			<Channel Name="QmixIO_1_AO3_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixIO_1_AO</Device>
+				<ChannelNo>3</ChannelNo>
+				<Scaling x1="0" y1="0" x2="65535" y2="10"/>
+				<OutputValueMax>65535</OutputValueMax>
+				<OutputValueMin>0</OutputValueMin>
+			</Channel>
+			<Channel Name="QmixIO_1_DI0">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI1">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI3">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>3</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI4">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>4</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI5">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>5</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI6">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>6</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DI7">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixIO_1_DI</Device>
+				<ChannelNo>7</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO0">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO1">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>1</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO3">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>3</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO4">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>4</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO5">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>5</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO6">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>6</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_1_DO7">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixIO_1_DO</Device>
+				<ChannelNo>7</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixIO_B_1_TC0" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_B_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="QmixIO_B_1_TC1" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_B_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="QmixIO_B_1_TC2" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_B_1_AI</Device>
+				<ChannelNo>2</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="QmixIO_B_1_TC3" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixIO_B_1_AI</Device>
+				<ChannelNo>3</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="Beckhoff_IO_1_TC0" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>Beckhoff_IO_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="Beckhoff_IO_1_TC1" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>Beckhoff_IO_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="Beckhoff_IO_1_TC2" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>Beckhoff_IO_1_AI</Device>
+				<ChannelNo>2</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+			<Channel Name="Beckhoff_IO_1_TC3" Terminal="K3314">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>Beckhoff_IO_1_AI</Device>
+				<ChannelNo>3</ChannelNo>
+				<Scaling Factor="0.1" Offset="0"/>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<Device Name="QmixP_1_Pressure1">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix p 1 Pressure 1</Caption>
+			<AnalogInChannel>QmixP_1_AI0</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>20</MaxValue>
+			<Unit>bar</Unit>
+			<SensorClass>Pressure</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixP_1_Pressure2">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix p 1 Pressure 2</Caption>
+			<AnalogInChannel>QmixP_1_AI1</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>20</MaxValue>
+			<Unit>bar</Unit>
+			<SensorClass>Pressure</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI1">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 1</Caption>
+			<AnalogInChannel>QmixIO_1_AI0</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>4</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI2">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 2</Caption>
+			<AnalogInChannel>QmixIO_1_AI1</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>4</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI3">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 3</Caption>
+			<AnalogInChannel>QmixIO_1_AI2</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>4</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI4">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 4</Caption>
+			<AnalogInChannel>QmixIO_1_AI3</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>4</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI5">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 5</Caption>
+			<AnalogInChannel>QmixIO_1_AI4</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>4</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI6">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 6</Caption>
+			<AnalogInChannel>QmixIO_1_AI5</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>4</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI7">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 7</Caption>
+			<AnalogInChannel>QmixIO_1_AI6</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AI8">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog In 8</Caption>
+			<AnalogInChannel>QmixIO_1_AI7</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixIO_1_AO1">
+			<Type>QtLabb::CAnalogOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog Out 1</Caption>
+			<AnalogOutChannel>QmixIO_1_AO0_PWM</AnalogOutChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_AO2">
+			<Type>QtLabb::CAnalogOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog Out 2</Caption>
+			<AnalogOutChannel>QmixIO_1_AO1_PWM</AnalogOutChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_AO3">
+			<Type>QtLabb::CAnalogOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog Out 3</Caption>
+			<AnalogOutChannel>QmixIO_1_AO2_PWM</AnalogOutChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_AO4">
+			<Type>QtLabb::CAnalogOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Analog Out 4</Caption>
+			<AnalogOutChannel>QmixIO_1_AO3_PWM</AnalogOutChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>10</MaxValue>
+			<Unit>V</Unit>
+			<SensorClass>Voltage</SensorClass>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI1">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 1</Caption>
+			<DigInChannel>QmixIO_1_DI0</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI2">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 2</Caption>
+			<DigInChannel>QmixIO_1_DI1</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI3">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 3</Caption>
+			<DigInChannel>QmixIO_1_DI2</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI4">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 4</Caption>
+			<DigInChannel>QmixIO_1_DI3</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI5">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 5</Caption>
+			<DigInChannel>QmixIO_1_DI4</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI6">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 6</Caption>
+			<DigInChannel>QmixIO_1_DI5</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI7">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 7</Caption>
+			<DigInChannel>QmixIO_1_DI6</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DI8">
+			<Type>QtLabb::CDigitalInChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig In 8</Caption>
+			<DigInChannel>QmixIO_1_DI7</DigInChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO1">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 1</Caption>
+			<DigOutChannel>QmixIO_1_DO0</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO2">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 2</Caption>
+			<DigOutChannel>QmixIO_1_DO1</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO3">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 3</Caption>
+			<DigOutChannel>QmixIO_1_DO2</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO4">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 4</Caption>
+			<DigOutChannel>QmixIO_1_DO3</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO5">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 5</Caption>
+			<DigOutChannel>QmixIO_1_DO4</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO6">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 6</Caption>
+			<DigOutChannel>QmixIO_1_DO5</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO7">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 7</Caption>
+			<DigOutChannel>QmixIO_1_DO6</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_DO8">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Qmix I/O 1 Dig Out 8</Caption>
+			<DigOutChannel>QmixIO_1_DO7</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixIO_1_Valve1">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Qmix I/O 1 Valve 1</Caption>
+			<labbCANDevice>QmixIO_1_Valve0</labbCANDevice>
+		</Device>
+		<Device Name="QmixIO_1_Valve2">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Qmix I/O 1 Valve 2</Caption>
+			<labbCANDevice>QmixIO_1_Valve1</labbCANDevice>
+		</Device>
+		<Device Name="QmixIO_1_Valve3">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Qmix I/O 1 Valve 3</Caption>
+			<labbCANDevice>QmixIO_1_Valve2</labbCANDevice>
+		</Device>
+		<Device Name="QmixIO_1_Valve4">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Qmix I/O 1 Valve 4</Caption>
+			<labbCANDevice>QmixIO_1_Valve3</labbCANDevice>
+		</Device>
+		<Device Name="QmixIO_B_1_TC1" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O-B 1 TC 1</Caption>
+			<AnalogInChannel>QmixIO_B_1_TC0</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixIO_B_1_TC2" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O-B 1 TC 2</Caption>
+			<AnalogInChannel>QmixIO_B_1_TC1</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixIO_B_1_TC3" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O-B 1 TC 3</Caption>
+			<AnalogInChannel>QmixIO_B_1_TC2</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixIO_B_1_TC4" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix I/O-B 1 TC 4</Caption>
+			<AnalogInChannel>QmixIO_B_1_TC3</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="Beckhoff_IO_1_TC1" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Beckhoff I/O 1 TC 1</Caption>
+			<AnalogInChannel>Beckhoff_IO_1_TC0</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="Beckhoff_IO_1_TC2" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Beckhoff I/O 1 TC 2</Caption>
+			<AnalogInChannel>Beckhoff_IO_1_TC1</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="Beckhoff_IO_1_TC3" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Beckhoff I/O 1 TC 3</Caption>
+			<AnalogInChannel>Beckhoff_IO_1_TC2</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="Beckhoff_IO_1_TC4" Terminal="K3314">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Beckhoff I/O 1 TC 4</Caption>
+			<AnalogInChannel>Beckhoff_IO_1_TC3</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>1370</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+	</DeviceList>
+	<log4cplus>log4cplus.logger.QmixIoLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>QmixIoLogger</PluginLogger>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="QmixP" NodeId="25" ManualNodeId="false" Index="22" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="QmixIO" NodeId="26" ManualNodeId="false" Index="23" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="QmixIO_B" NodeId="27" ManualNodeId="false" Index="24" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="Beckhoff_IO" NodeId="28" ManualNodeId="false" Index="25" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

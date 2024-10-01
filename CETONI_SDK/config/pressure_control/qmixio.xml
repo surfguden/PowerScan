@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="QmixP_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="3">Usl::SysTec::CChipF40</CANopenDevice>
+				<AnalogInName>QmixP_1_AI</AnalogInName>
+				<Simulated>1</Simulated>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="QmixP_1_AI0">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixP_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<ScalingFactor>1</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+			</Channel>
+			<Channel Name="QmixP_1_AI1">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixP_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<ScalingFactor>1</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<Device Name="QmixP_1_Pressure1">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix p 1 Pressure 1</Caption>
+			<AnalogInChannel>QmixP_1_AI0</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>20</MaxValue>
+			<Unit>bar</Unit>
+			<Symbol>p</Symbol>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+			<UserScaling>
+				<DeviceUnit>bar</DeviceUnit>
+				<Scaling Factor="1" Offset="0"/>
+			</UserScaling>
+			<Icon>:/io/images/deviceicon_pressure2_%1.png</Icon>
+		</Device>
+		<Device Name="QmixP_1_Pressure2">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix p 1 Pressure 2</Caption>
+			<AnalogInChannel>QmixP_1_AI1</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>20</MaxValue>
+			<Unit>bar</Unit>
+			<Symbol>p</Symbol>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+			<UserScaling>
+				<DeviceUnit>bar</DeviceUnit>
+				<Scaling Factor="1" Offset="0"/>
+			</UserScaling>
+			<Icon>:/io/images/deviceicon_pressure2_%1.png</Icon>
+		</Device>
+	</DeviceList>
+	<log4cplus>log4cplus.logger.QmixIoLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>QmixIoLogger</PluginLogger>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="QmixP" NodeId="3" ManualNodeId="false" Index="1" DeviceId="1" Simulated="true" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

@@ -1,0 +1,6 @@
+<map id="labbCAN Bus API" name="labbCAN Bus API">
+<area shape="rect" id="node2" href="$group__lcb__init.html" title="Initialize communication to device. " alt="" coords="217,5,305,33"/>
+<area shape="rect" id="node3" href="$group__lcb__device.html" title="Common labCAN bus device handling and management This group defines all common functions for handling..." alt="" coords="192,55,331,83"/>
+<area shape="rect" id="node4" href="$group__lcb__error.html" title="Error and event handling This group defines all required functions for handling of common bus events ..." alt="" coords="180,106,343,134"/>
+<area shape="rect" id="node5" href="$group__lcb__utility.html" title="Common utility and helper functions. " alt="" coords="204,157,319,185"/>
+</map>

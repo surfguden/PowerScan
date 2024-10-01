@@ -1,0 +1,4 @@
+<map id="labbCAN Valve API" name="labbCAN Valve API">
+<area shape="rect" id="node2" href="$group__lcv__control.html" title="This groups defines all functions for control of valves and for reading valve status. " alt="" coords="188,5,351,33"/>
+<area shape="rect" id="node3" href="$group__lcv__api__init.html" title="This groups defines all functions to retrieve valid valve device handles from the labbCAN valve libra..." alt="" coords="195,55,344,83"/>
+</map>

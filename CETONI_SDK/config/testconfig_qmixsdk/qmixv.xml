@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="QmixV_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="18">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<DigitalOutName>QmixV_1_DO</DigitalOutName>
+				<DigitalInName>QmixV_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+			</Device>
+			<Device Name="QmixV_1_Valve">
+				<Type>QmixV::CRotationValve</Type>
+				<DigitalOutDevice>QmixV_1_DO</DigitalOutDevice>
+				<FeedbackInputDevice>QmixV_1_DI</FeedbackInputDevice>
+				<PositionBitfields>
+					<Position>0x01</Position>
+					<Position>0x02</Position>
+				</PositionBitfields>
+				<InputPositionIndex>0</InputPositionIndex>
+				<OutputPositionIndex>1</OutputPositionIndex>
+				<MaximumPressure_bar>9</MaximumPressure_bar>
+			</Device>
+			<Device Name="FestoVindumModule_1">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="19">Usl::CDS401GenericIoDevice</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<DigitalOutName>FestoVindumModule_1_DO</DigitalOutName>
+				<Simulated>true</Simulated>
+			</Device>
+			<Device Name="FestoVindumModule_1_Valve0">
+				<Type>Lcl::CDigitalIoValve</Type>
+				<DigitalOutDevice>FestoVindumModule_1_DO</DigitalOutDevice>
+				<PositionBitfields>
+					<Position>0x00000001</Position>
+					<Position>0x00000004</Position>
+					<Position>0x00000005</Position>
+					<Position>0x00000000</Position>
+				</PositionBitfields>
+				<InputPositionIndex>0</InputPositionIndex>
+				<OutputPositionIndex>1</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+				<MaximumPressure_bar>344</MaximumPressure_bar>
+			</Device>
+			<Device Name="FestoVindumModule_1_Valve1">
+				<Type>Lcl::CDigitalIoValve</Type>
+				<DigitalOutDevice>FestoVindumModule_1_DO</DigitalOutDevice>
+				<PositionBitfields>
+					<Position>0x00000010</Position>
+					<Position>0x00000040</Position>
+					<Position>0x00000050</Position>
+					<Position>0x00000000</Position>
+				</PositionBitfields>
+				<InputPositionIndex>0</InputPositionIndex>
+				<OutputPositionIndex>1</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+				<MaximumPressure_bar>689</MaximumPressure_bar>
+			</Device>
+			<Device Name="FestoVindumModule_1_Valve2">
+				<Type>Lcl::CDigitalIoValve</Type>
+				<DigitalOutDevice>FestoVindumModule_1_DO</DigitalOutDevice>
+				<PositionBitfields>
+					<Position>0x00000100</Position>
+					<Position>0x00000400</Position>
+					<Position>0x00000500</Position>
+					<Position>0x00000000</Position>
+				</PositionBitfields>
+				<InputPositionIndex>0</InputPositionIndex>
+				<OutputPositionIndex>1</OutputPositionIndex>
+				<SwitchOffPositionIndex>0</SwitchOffPositionIndex>
+				<MaximumPressure_bar>1378</MaximumPressure_bar>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="FestoVindumModule_1_DO0">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>FestoVindumModule_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="FestoVindumModule_1_DO1">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>FestoVindumModule_1_DO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="FestoVindumModule_1_DO2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>FestoVindumModule_1_DO</Device>
+				<ChannelNo>4</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="FestoVindumModule_1_DO3">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>FestoVindumModule_1_DO</Device>
+				<ChannelNo>6</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="FestoVindumModule_1_DO4">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>FestoVindumModule_1_DO</Device>
+				<ChannelNo>8</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="FestoVindumModule_1_DO5">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>FestoVindumModule_1_DO</Device>
+				<ChannelNo>10</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<Device Name="QmixV_1">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Qmix V 1</Caption>
+			<labbCANDevice>QmixV_1_Valve</labbCANDevice>
+			<PositionIcon>2Pos6Port_PositionIcon</PositionIcon>
+		</Device>
+		<Device Name="FestoVindumModule_1_Valve0">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Festo Valve Terminal 1 Valve 0</Caption>
+			<labbCANDevice>FestoVindumModule_1_Valve0</labbCANDevice>
+			<PositionIcon>3x2Way_Vindum_Valve</PositionIcon>
+		</Device>
+		<Device Name="FestoVindumModule_1_Valve1">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Festo Valve Terminal 1 Valve 1</Caption>
+			<labbCANDevice>FestoVindumModule_1_Valve1</labbCANDevice>
+			<PositionIcon>3x2Way_Vindum_Valve</PositionIcon>
+		</Device>
+		<Device Name="FestoVindumModule_1_Valve2">
+			<Type>QtLabb::CValve</Type>
+			<Caption>Festo Valve Terminal 1 Valve 2</Caption>
+			<labbCANDevice>FestoVindumModule_1_Valve2</labbCANDevice>
+			<PositionIcon>3x2Way_Vindum_Valve</PositionIcon>
+		</Device>
+		<Device Name="FestoVindumModule_1_DO0">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Festo Valve Terminal 1 DigOUT 0</Caption>
+			<DigOutChannel>FestoVindumModule_1_DO0</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="FestoVindumModule_1_DO1">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Festo Valve Terminal 1 DigOUT 1</Caption>
+			<DigOutChannel>FestoVindumModule_1_DO1</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="FestoVindumModule_1_DO2">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Festo Valve Terminal 1 DigOUT 2</Caption>
+			<DigOutChannel>FestoVindumModule_1_DO2</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="FestoVindumModule_1_DO3">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Festo Valve Terminal 1 DigOUT 3</Caption>
+			<DigOutChannel>FestoVindumModule_1_DO3</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="FestoVindumModule_1_DO4">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Festo Valve Terminal 1 DigOUT 4</Caption>
+			<DigOutChannel>FestoVindumModule_1_DO4</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="FestoVindumModule_1_DO5">
+			<Type>QtLabb::CDigitalOutChannelDevice</Type>
+			<Caption>Festo Valve Terminal 1 DigOUT 5</Caption>
+			<DigOutChannel>FestoVindumModule_1_DO5</DigOutChannel>
+			<Color>FF00FF00</Color>
+		</Device>
+	</DeviceList>
+	<log4cplus>log4cplus.logger.QmixVLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>QmixVLogger</PluginLogger>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="QmixV" NodeId="18" ManualNodeId="false" Index="15" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="FestoVindumModule" NodeId="19" ManualNodeId="false" Index="16" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

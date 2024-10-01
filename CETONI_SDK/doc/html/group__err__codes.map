@@ -1,0 +1,14 @@
+<map id="Error Codes" name="Error Codes">
+<area shape="rect" id="node1" href="$group__err__cano__dev.html" title="CANopen device profile\l specific errors" alt="" coords="163,5,317,49"/>
+<area shape="rect" id="node2" href="$group__err__ipc__op.html" title="IPC/network software\l &#45;&#45; operational errors" alt="" coords="168,71,312,115"/>
+<area shape="rect" id="node3" href="$group__err__network.html" title="Additional errors used\l by networking" alt="" coords="167,138,313,182"/>
+<area shape="rect" id="node4" href="$group__err__cano__sdo.html" title="CANopen SDO transfer\l errors" alt="" coords="163,205,317,249"/>
+<area shape="rect" id="node5" href="$group__err__cano__dll.html" title="CANopen Data link layer\l errors" alt="" coords="159,271,321,315"/>
+<area shape="rect" id="node6" href="$group__err__comm.html" title="Generic communication\l protocol specific error codes" alt="" coords="147,338,333,382"/>
+<area shape="rect" id="node7" href="$group__err__cano__cal.html" title="CANopen application\l layer errors" alt="" coords="169,405,311,449"/>
+<area shape="rect" id="node8" href="$group__err__nonblock.html" title="Non&#45;blocking and interrupt i/o" alt="" coords="145,471,335,499"/>
+<area shape="rect" id="node9" href="$group__err__ipc__arg.html" title="IPC/network software\l &#45;&#45; argument errors" alt="" coords="168,522,312,566"/>
+<area shape="rect" id="node10" href="$group__err__common.html" title="Common error codes" alt="" coords="169,589,311,617"/>
+<area shape="rect" id="node11" href="$group__err__cano__lss.html" title="CANopen LSS transfer\l errors" alt="" coords="164,639,316,683"/>
+<area shape="rect" id="node12" href="$group__err__add__user.html" title="Additional user defined\l error codes" alt="" coords="164,706,316,750"/>
+</map>

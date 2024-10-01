@@ -1,0 +1,13 @@
+<map id="labbCAN Pump API" name="labbCAN Pump API">
+<area shape="rect" id="node1" href="$group__lcp__conti.html" title="Functions for creation and control of continuous flow pumps. " alt="" coords="191,5,369,33"/>
+<area shape="rect" id="node2" href="$group__lcp__status.html" title="Functions to query the actual pump status, flow and volume. " alt="" coords="232,55,328,83"/>
+<area shape="rect" id="node3" href="$group__lcp__drv.html" title="Functions to control and maintain the drive that drives the pump. " alt="" coords="215,106,345,134"/>
+<area shape="rect" id="node5" href="$group__lcp__force.html" title="This group contains functions for controlling the force monitoring, reading the force sensor and sett..." alt="" coords="191,157,369,185"/>
+<area shape="rect" id="node6" href="$group__lcp__valve.html" title="Functions to access the optional valve that may be assigned to a certain pump device. " alt="" coords="212,207,348,235"/>
+<area shape="rect" id="node7" href="$group__lcp__common.html" title="Common pump specific auxiliary functions. " alt="" coords="215,258,345,286"/>
+<area shape="rect" id="node8" href="$group__lcp__pumpunits.html" title="Defines common SI units for volume and flow rate for all pump devices. " alt="" coords="228,309,332,337"/>
+<area shape="rect" id="node9" href="$group__lcp__cfg.html" title="Functions for configuration of pump parameters and pump SI units. " alt="" coords="213,359,347,387"/>
+<area shape="rect" id="node10" href="$group__lcp__control.html" title="Functions to control the pump parameters like flow and volume. " alt="" coords="231,410,329,438"/>
+<area shape="rect" id="node11" href="$group__lcp__api__init.html" title="API specific initialisation functions. " alt="" coords="204,461,356,489"/>
+<area shape="rect" id="node12" href="$group__lcp__tt.html" title="Functions to configure and control time&#45;triggered dosage. " alt="" coords="205,511,355,539"/>
+</map>

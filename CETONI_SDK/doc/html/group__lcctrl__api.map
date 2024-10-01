@@ -1,0 +1,5 @@
+<map id="labbCAN Controller API" name="labbCAN Controller API">
+<area shape="rect" id="node1" href="$group__lcctrl__chan__init.html" title="Controller module channel initialisation functions This group defines all functions to initialise con..." alt="" coords="235,5,373,33"/>
+<area shape="rect" id="node2" href="$group__lcctrl__chan__access.html" title="Control channel access functions This group defines all functions for access to control parameters li..." alt="" coords="224,55,384,83"/>
+<area shape="rect" id="node4" href="$group__lcctrl__common.html" title="Common channel specific auxiliary functions. " alt="" coords="212,106,396,134"/>
+</map>

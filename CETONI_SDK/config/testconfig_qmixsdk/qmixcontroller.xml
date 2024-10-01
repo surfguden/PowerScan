@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin Valid="true">
+	<labbCAN>
+		<DeviceList>
+			<Device Name="QmixQminus_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="20">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixQminus_1_AI</AnalogInName>
+				<AnalogOutName>QmixQminus_1_AO</AnalogOutName>
+				<DigitalOutName>QmixQminus_1_DO</DigitalOutName>
+				<DigitalInName>QmixQminus_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+				<ObjDictEntries>
+					<ObjDictEntry Index="1016" SubIndex="1" ValueHex="7F0BB8" Size="4" comment="Consumer Heartbeat Time #1"/>
+					<ObjDictEntry Index="6543" SubIndex="1" Value="1" Size="1" comment="PWM0_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="2" Value="1" Size="1" comment="PWM1_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="3" Value="1" Size="1" comment="PWM2_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="4" Value="1" Size="1" comment="PWM3_PulseErrorMode"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="QmixQplus_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="21">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixQplus_1_AI</AnalogInName>
+				<AnalogOutName>QmixQplus_1_AO</AnalogOutName>
+				<DigitalOutName>QmixQplus_1_DO</DigitalOutName>
+				<DigitalInName>QmixQplus_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+				<ObjDictEntries>
+					<ObjDictEntry Index="1016" SubIndex="1" ValueHex="7F0BB8" Size="4" comment="Consumer Heartbeat Time #1"/>
+					<ObjDictEntry Index="6543" SubIndex="1" Value="1" Size="1" comment="PWM0_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="2" Value="1" Size="1" comment="PWM1_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="3" Value="1" Size="1" comment="PWM2_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="4" Value="1" Size="1" comment="PWM3_PulseErrorMode"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="QmixQplus_Column_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="22">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixQplus_Column_1_AI</AnalogInName>
+				<AnalogOutName>QmixQplus_Column_1_AO</AnalogOutName>
+				<DigitalOutName>QmixQplus_Column_1_DO</DigitalOutName>
+				<DigitalInName>QmixQplus_Column_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+				<ObjDictEntries>
+					<ObjDictEntry Index="1016" SubIndex="1" ValueHex="7F0BB8" Size="4" comment="Consumer Heartbeat Time #1"/>
+					<ObjDictEntry Index="6543" SubIndex="1" Value="1" Size="1" comment="PWM0_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="2" Value="1" Size="1" comment="PWM1_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="3" Value="1" Size="1" comment="PWM2_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="4" Value="1" Size="1" comment="PWM3_PulseErrorMode"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="QmixTC_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="23">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixTC_1_AI</AnalogInName>
+				<AnalogOutName>QmixTC_1_AO</AnalogOutName>
+				<DigitalOutName>QmixTC_1_DO</DigitalOutName>
+				<DigitalInName>QmixTC_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+				<ObjDictEntries>
+					<ObjDictEntry Index="1016" SubIndex="1" ValueHex="7F0BB8" Size="4" comment="Consumer Heartbeat Time #1"/>
+					<ObjDictEntry Index="6543" SubIndex="1" Value="1" Size="1" comment="PWM0_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="2" Value="1" Size="1" comment="PWM1_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="3" Value="1" Size="1" comment="PWM2_PulseErrorMode"/>
+					<ObjDictEntry Index="6543" SubIndex="4" Value="1" Size="1" comment="PWM3_PulseErrorMode"/>
+				</ObjDictEntries>
+			</Device>
+			<Device Name="QmixQIplus_1_ChipF40">
+				<Type>Lcl::CMultiIoCANopenDS401</Type>
+				<Bus>CANopenBus1</Bus>
+				<CANopenDevice NodeId="24">Usl::SysTec::CChipF40</CANopenDevice>
+				<Identity VendorId="$VendorId$" ProductCode="$ProductCode$" Revision="$Revision$" SerialNo="$SerialNo$"/>
+				<AnalogInName>QmixQIplus_1_AI</AnalogInName>
+				<AnalogOutName>QmixQIplus_1_AO</AnalogOutName>
+				<DigitalOutName>QmixQIplus_1_DO</DigitalOutName>
+				<DigitalInName>QmixQIplus_1_DI</DigitalInName>
+				<DigitalInStates>0x00000000</DigitalInStates>
+				<Simulated>true</Simulated>
+			</Device>
+		</DeviceList>
+		<ChannelList>
+			<Channel Name="QmixQminus_1_DI0_DIAGA">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQminus_1_DI</Device>
+				<ChannelNo>0</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQminus_1_DI1_DIAGB">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQminus_1_DI</Device>
+				<ChannelNo>1</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQminus_1_DO0_INA">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQminus_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQminus_1_DO1_INB">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQminus_1_DO</Device>
+				<ChannelNo>1</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQminus_1_DO2_INA2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQminus_1_DO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQminus_1_DO3_INB2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQminus_1_DO</Device>
+				<ChannelNo>3</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQminus_1_AO0_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQminus_1_AO</Device>
+				<ChannelNo>0</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixQminus_1_AO1_Fan">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQminus_1_AO</Device>
+				<ChannelNo>1</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixQminus_1_AI0_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQminus_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQminus_1_Temperature">
+				<Type>Lcl::CQmixChipF40Controller</Type>
+				<PwmOutputEnable>QmixQminus_1_DO2_INA2</PwmOutputEnable>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix Q- Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixQminus_1_AI0_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogTwoQuadrantLoopOut</Type>
+						<DigitalOut Device="QmixQminus_1_DO" Negative="0x01" Positive="0x02"/>
+						<Channel>QmixQminus_1_AO0_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixQplus_1_DI0_DIAGA">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_1_DI</Device>
+				<ChannelNo>0</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_1_DI1_DIAGB">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_1_DI</Device>
+				<ChannelNo>1</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_1_DI2_DIAGA2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_1_DI</Device>
+				<ChannelNo>2</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_1_DI3_DIAGB2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_1_DI</Device>
+				<ChannelNo>3</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_1_DO0_INA">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_1_DO1_INB">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_1_DO</Device>
+				<ChannelNo>1</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_1_DO2_INA2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_1_DO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_1_DO3_INB2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_1_DO</Device>
+				<ChannelNo>3</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_1_AO0_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQplus_1_AO</Device>
+				<ChannelNo>0</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixQplus_1_AO1_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQplus_1_AO</Device>
+				<ChannelNo>1</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixQplus_1_AI0_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQplus_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQplus_1_AI1_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQplus_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQplus_1_ReactorZone">
+				<Type>Lcl::CQmixChipF40Controller</Type>
+				<PwmOutputEnable>QmixQplus_1_DO1_INB</PwmOutputEnable>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix Q+ Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixQplus_1_AI0_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogChannelLoopOut</Type>
+						<Channel>QmixQplus_1_AO0_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixQplus_1_ReactionLoop">
+				<Type>Lcl::CQmixChipF40Controller</Type>
+				<PwmOutputEnable>QmixQplus_1_DO3_INB2</PwmOutputEnable>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix Q+ Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixQplus_1_AI1_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogChannelLoopOut</Type>
+						<Channel>QmixQplus_1_AO1_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DI0_DIAGA">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_Column_1_DI</Device>
+				<ChannelNo>0</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DI1_DIAGB">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_Column_1_DI</Device>
+				<ChannelNo>1</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DI2_DIAGA2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_Column_1_DI</Device>
+				<ChannelNo>2</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DI3_DIAGB2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixQplus_Column_1_DI</Device>
+				<ChannelNo>3</ChannelNo>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DO0_INA">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_Column_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DO1_INB">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_Column_1_DO</Device>
+				<ChannelNo>1</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DO2_INA2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_Column_1_DO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_DO3_INB2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQplus_Column_1_DO</Device>
+				<ChannelNo>3</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_AO0_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQplus_Column_1_AO</Device>
+				<ChannelNo>0</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_AO1_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQplus_Column_1_AO</Device>
+				<ChannelNo>1</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_AI0_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQplus_Column_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_AI1_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQplus_Column_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_ReactorZone">
+				<Type>Lcl::CQmixChipF40Controller</Type>
+				<PwmOutputEnable>QmixQplus_Column_1_DO1_INB</PwmOutputEnable>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix Q+ Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixQplus_Column_1_AI0_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogChannelLoopOut</Type>
+						<Channel>QmixQplus_Column_1_AO0_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixQplus_Column_1_ReactionLoop">
+				<Type>Lcl::CQmixChipF40Controller</Type>
+				<PwmOutputEnable>QmixQplus_Column_1_DO3_INB2</PwmOutputEnable>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix Q+ Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixQplus_Column_1_AI1_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogChannelLoopOut</Type>
+						<Channel>QmixQplus_Column_1_AO1_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixTC_1_DI0_DIAGA">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixTC_1_DI</Device>
+				<ChannelNo>0</ChannelNo>
+			</Channel>
+			<Channel Name="QmixTC_1_DI1_DIAGB">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixTC_1_DI</Device>
+				<ChannelNo>1</ChannelNo>
+			</Channel>
+			<Channel Name="QmixTC_1_DI2_DIAGA2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixTC_1_DI</Device>
+				<ChannelNo>2</ChannelNo>
+			</Channel>
+			<Channel Name="QmixTC_1_DI3_DIAGB2">
+				<Type>Lcl::CDigitalInChannel</Type>
+				<Device>QmixTC_1_DI</Device>
+				<ChannelNo>3</ChannelNo>
+			</Channel>
+			<Channel Name="QmixTC_1_DO0_INA">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixTC_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixTC_1_DO1_INB">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixTC_1_DO</Device>
+				<ChannelNo>1</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixTC_1_DO2_INA2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixTC_1_DO</Device>
+				<ChannelNo>2</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixTC_1_DO3_INB2">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixTC_1_DO</Device>
+				<ChannelNo>3</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixTC_1_AO0_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixTC_1_AO</Device>
+				<ChannelNo>0</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixTC_1_AO1_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixTC_1_AO</Device>
+				<ChannelNo>1</ChannelNo>
+				<ScalingFactor>0.00152590218966964217593652246891</ScalingFactor>
+				<ScalingOffset>0</ScalingOffset>
+				<OutputValueMax>65535</OutputValueMax>
+			</Channel>
+			<Channel Name="QmixTC_1_AI0_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixTC_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixTC_1_AI1_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixTC_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixTC_1_AI2_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixTC_1_AI</Device>
+				<ChannelNo>2</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixTC_1_AI3_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixTC_1_AI</Device>
+				<ChannelNo>3</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixTC_1_Ctrl1">
+				<Type>Lcl::CLocalControllerChannel</Type>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix TC 1 Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixTC_1_AI0_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogTwoQuadrantLoopOut</Type>
+						<DigitalOut Device="QmixTC_1_DO" Negative="0x01" Positive="0x02"/>
+						<Channel>QmixTC_1_AO0_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixTC_1_Ctrl2">
+				<Type>Lcl::CLocalControllerChannel</Type>
+				<ControlLoop>
+					<Type>Lcl::CPIDControlLoop</Type>
+					<Enabled>false</Enabled>
+					<PIDParam Name="Qmix TC 2 Default" K="0" Td="0" Ti="0" Tt="0" DerivativeGainLimit="0" MinU="0" MaxU="0" DisabledU="0" SampleTime_ms="20" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixTC_1_AI1_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CAnalogTwoQuadrantLoopOut</Type>
+						<DigitalOut Device="QmixTC_1_DO" Negative="0x04" Positive="0x08"/>
+						<Channel>QmixTC_1_AO1_PWM</Channel>
+					</Output>
+				</ControlLoop>
+			</Channel>
+			<Channel Name="QmixQIplus_1_AI0_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQIplus_1_AI</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQIplus_1_AI1_PT100">
+				<Type>Lcl::CAnalogInChannel</Type>
+				<Device>QmixQIplus_1_AI</Device>
+				<ChannelNo>1</ChannelNo>
+				<Scaling Type="Lcl::CQmixPt100Scaling"/>
+			</Channel>
+			<Channel Name="QmixQIplus_1_AO0_PWM">
+				<Type>Lcl::CAnalogOutChannel</Type>
+				<Device>QmixQIplus_1_AO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Scaling x1="0" y1="0" x2="65535" y2="100"/>
+				<OutputValueMax>65535</OutputValueMax>
+				<OutputValueMin>0</OutputValueMin>
+			</Channel>
+			<Channel Name="QmixQIplus_1_DO0">
+				<Type>Lcl::CDigitalOutChannel</Type>
+				<Device>QmixQIplus_1_DO</Device>
+				<ChannelNo>0</ChannelNo>
+				<Inverted>0</Inverted>
+			</Channel>
+			<Channel Name="QmixQIplus_1_Temperature">
+				<Type>Lcl::CLocalControllerChannel</Type>
+				<ControlLoop>
+					<Type>Lcl::CTwoLevelControlLoop</Type>
+					<Enabled>false</Enabled>
+					<Parameters Name="Qmix QI+ Default" U_Up="1" U_Down="0" LowerThreshold="0.5" UpperThreshold="0.5" U_Disabled="0" SampleTime_ms="50" Setpoint="0"/>
+					<Input>
+						<Type>Lcl::CAnalogChannelLoopIn</Type>
+						<Channel>QmixQIplus_1_AI0_PT100</Channel>
+					</Input>
+					<Output>
+						<Type>Lcl::CConditionalControlLoop</Type>
+						<Enabled>true</Enabled>
+						<Parameters Name="Qmix QI+ Coil Temperature" UpperLimit="130" Threshold="20" U_Disabled="0" SampleTime_ms="50" Setpoint="0"/>
+						<Input>
+							<Type>Lcl::CAnalogChannelLoopIn</Type>
+							<Channel>QmixQIplus_1_AI1_PT100</Channel>
+						</Input>
+						<Output>
+							<Type>Lcl::CDigitalChannelLoopOut</Type>
+							<Name>QmixQIplus_1 LoopOutput</Name>
+							<Channel>QmixQIplus_1_DO0</Channel>
+						</Output>
+					</Output>
+				</ControlLoop>
+			</Channel>
+		</ChannelList>
+	</labbCAN>
+	<DeviceList>
+		<Device Name="QmixQminus_1">
+			<Type>QmixController::CQmixQMinusDevice</Type>
+			<Caption>Qmix Q- 1</Caption>
+			<ControllerChannel>QmixQminus_1_Temperature</ControllerChannel>
+			<AnalogInTemperature>QmixQminus_1_AI0_PT100</AnalogInTemperature>
+			<MinValue>-40</MinValue>
+			<MaxValue>100</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixQplus_1ReactorZone">
+			<Type>QmixController::CQmixQPlusDevice</Type>
+			<Caption>Qmix Q+ 1 Reactor Zone</Caption>
+			<ControllerChannel>QmixQplus_1_ReactorZone</ControllerChannel>
+			<AnalogInTemperature>QmixQplus_1_AI0_PT100</AnalogInTemperature>
+			<MinValue>10</MinValue>
+			<MaxValue>200</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixQplus_1ReactionLoop">
+			<Type>QmixController::CQmixQPlusDevice</Type>
+			<Caption>Qmix Q+ 1 Reaction Loop</Caption>
+			<ControllerChannel>QmixQplus_1_ReactionLoop</ControllerChannel>
+			<AnalogInTemperature>QmixQplus_1_AI1_PT100_2</AnalogInTemperature>
+			<MinValue>10</MinValue>
+			<MaxValue>200</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixQplus_Column_1ReactorZone">
+			<Type>QmixController::CQmixQPlusDevice</Type>
+			<Caption>Qmix Q+ Heating Column 1 Reactor Zone</Caption>
+			<ControllerChannel>QmixQplus_Column_1_ReactorZone</ControllerChannel>
+			<AnalogInTemperature>QmixQplus_Column_1_AI0_PT100</AnalogInTemperature>
+			<MinValue>10</MinValue>
+			<MaxValue>200</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixQplus_Column_1ReactionLoop">
+			<Type>QmixController::CQmixQPlusDevice</Type>
+			<Caption>Qmix Q+ Heating Column 1 Reaction Loop</Caption>
+			<ControllerChannel>QmixQplus_Column_1_ReactionLoop</ControllerChannel>
+			<AnalogInTemperature>QmixQplus_Column_1_AI1_PT100_2</AnalogInTemperature>
+			<MinValue>10</MinValue>
+			<MaxValue>200</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixTC_1_Ctrl_1">
+			<Type>QmixController::CQmixTCDevice</Type>
+			<Caption>Qmix TC 1 Ctrl 1</Caption>
+			<ControllerChannel>QmixTC_1_Ctrl1</ControllerChannel>
+			<AnalogInTemperature>QmixTC_1_AI0_PT100</AnalogInTemperature>
+			<MinValue>-100</MinValue>
+			<MaxValue>500</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixTC_1_Ctrl_2">
+			<Type>QmixController::CQmixTCDevice</Type>
+			<Caption>Qmix TC 1 Ctrl 2</Caption>
+			<ControllerChannel>QmixTC_1_Ctrl2</ControllerChannel>
+			<AnalogInTemperature>QmixTC_1_AI1_PT100</AnalogInTemperature>
+			<MinValue>-100</MinValue>
+			<MaxValue>500</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixTC_1_PT100_3">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix TC 1 PT100-3</Caption>
+			<AnalogInChannel>QmixTC_1_AI2_PT100</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>500</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixTC_1_PT100_4">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix TC 1 PT100-4</Caption>
+			<AnalogInChannel>QmixTC_1_AI3_PT100</AnalogInChannel>
+			<MinValue>-100</MinValue>
+			<MaxValue>500</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>0</Decimals>
+		</Device>
+		<Device Name="QmixQIplus_1_LED">
+			<Type>QtLabb::CAnalogOutChannelDevice</Type>
+			<Caption>Qmix QI+ 1 LED</Caption>
+			<AnalogOutChannel>QmixQIplus_1_AO0_PWM</AnalogOutChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>100</MaxValue>
+			<Unit>%</Unit>
+			<Symbol>U</Symbol>
+			<Color>FF00FF00</Color>
+		</Device>
+		<Device Name="QmixQIplus_1_Temperature_Coil">
+			<Type>QtLabb::CAnalogInChannelDevice</Type>
+			<Caption>Qmix QI+ 1 Temperature Coil</Caption>
+			<AnalogInChannel>QmixQIplus_1_AI1_PT100</AnalogInChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>350</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FF00FF00</Color>
+			<Decimals>1</Decimals>
+		</Device>
+		<Device Name="QmixQIplus_1_Ctrl">
+			<Type>QtLabb::CControlChannelDevice</Type>
+			<Caption>Qmix QI+ 1 Ctrl</Caption>
+			<ControllerChannel>QmixQIplus_1_Temperature</ControllerChannel>
+			<MinValue>0</MinValue>
+			<MaxValue>350</MaxValue>
+			<Unit>°C</Unit>
+			<SensorClass>Temperature</SensorClass>
+			<Color>FFFF0000</Color>
+			<Decimals>0</Decimals>
+		</Device>
+	</DeviceList>
+	<log4cplus>log4cplus.logger.QmixControllerLogger=WARN, LogAppender</log4cplus>
+	<PluginLogger>QmixControllerLogger</PluginLogger>
+	<PIDParameters>
+		<Param Name="Qmix Q+ Default" K="3" Td="0" Ti="260" Tt="250" DerivativeGainLimit="20" MinU="0" MaxU="100" DisabledU="0" SampleTime_ms="500" Setpoint="0"/>
+		<Param Name="Qmix Q- Default" K="3" Td="0" Ti="144" Tt="132" DerivativeGainLimit="40" MinU="-100" MaxU="100" DisabledU="0" SampleTime_ms="500" Setpoint="0"/>
+		<Param Name="neMESYS Pressure Control" K="0.5" Td="0" Ti="300" Tt="250" DerivativeGainLimit="0" MinU="-100" MaxU="100" DisabledU="0" SampleTime_ms="50" Setpoint="0"/>
+	</PIDParameters>
+</Plugin>
+<MetaInfo>
+	<QmixDevices>
+		<QmixDevice Type="QmixQminus" NodeId="20" ManualNodeId="false" Index="17" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="QmixQplus" NodeId="21" ManualNodeId="false" Index="18" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="QmixQplus_Column" NodeId="22" ManualNodeId="false" Index="19" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="QmixTC" NodeId="23" ManualNodeId="false" Index="20" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+		<QmixDevice Type="QmixQIplus" NodeId="24" ManualNodeId="false" Index="21" DeviceId="1" Simulated="true" CANBitrate="0" SerialNumber="" DrawingNumber="" Configured="false"/>
+	</QmixDevices>
+</MetaInfo>

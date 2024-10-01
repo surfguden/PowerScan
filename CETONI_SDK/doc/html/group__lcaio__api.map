@@ -1,0 +1,6 @@
+<map id="labbCAN Analog I/O API" name="labbCAN Analog I/O API">
+<area shape="rect" id="node2" href="$group__lcaio__out.html" title="Analog output channel functions This group defines all functions to output analog signals on specific..." alt="" coords="257,5,361,33"/>
+<area shape="rect" id="node3" href="$group__lcaio__chan__init.html" title="Analog I/O module channel initialisation functions This group defines all functions to initialise ana..." alt="" coords="240,55,379,83"/>
+<area shape="rect" id="node4" href="$group__lcaio__in.html" title="Analog input channel functions This group defines all functions to measure analog input signals via v..." alt="" coords="263,106,356,134"/>
+<area shape="rect" id="node5" href="$group__lcaio__common.html" title="Common channel specific auxiliary functions. " alt="" coords="217,157,401,185"/>
+</map>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Plugin>
+    <SpaceNavigator>
+    </SpaceNavigator>
+    <log4cplus>
+        log4cplus.logger.SpaceNavigatorLogger=WARN, LogAppender
+    </log4cplus>
+    <PluginLogger>SpaceNavigatorLogger</PluginLogger>
+</Plugin>
