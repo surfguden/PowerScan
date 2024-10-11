@@ -144,6 +144,20 @@ end
     ylabel("Syringe Fill Level(uL)")
     title("Temperature Vs Elapsed Time, and syringe level")
     legend(["Temperature CH1" "Temperature CH2" "Syringe Fill Level"],'Location',"best")
+
+    nexttile
+    hold on
+    plot(all_data.ElapsedTime, all_data.meTECCH1ObjectTemperatureC)
+    plot(all_data.ElapsedTime, all_data.meTECCH2ObjectTemperatureC)
+    ylabel("Temperature(C)")
+    xlabel("Elapsed Time(s)")
+    syringe_refilled_at=all_data.ElapsedTime(diff(all_data.CetoniFillLevel)>0);
+    power_changed_at=all_data.ElapsedTime(diff(all_data.SetPower)~=0)
+    xline(syringe_refilled_at)
+    xline(power_changed_at,"red")
+    ylabel("Syringe Fill Level(uL)")
+    title("Temperature Vs Elapsed Time, and syringe level")
+    legend(["Temperature CH1" "Temperature CH2" "Syringe refill" "PowerChange"],'Location',"best")
     
 
    
