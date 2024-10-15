@@ -164,6 +164,8 @@
 		<Item Name="Control 1.ctl" Type="VI" URL="../Application_class/Control 1.ctl"/>
 		<Item Name="CetoniPump.lvclass" Type="LVClass" URL="../CetoniPump_class/CetoniPump.lvclass"/>
 		<Item Name="TDMSLogger_PowerScan.lvclass" Type="LVClass" URL="../TDMSLogger_PowerScan_class/TDMSLogger_PowerScan.lvclass"/>
+		<Item Name="Main_without_temperature.vi" Type="VI" URL="../Main_without_temperature.vi"/>
+		<Item Name="Dummy_Mtec.lvclass" Type="LVClass" URL="../Dummy_Mtec_class/Dummy_Mtec.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
