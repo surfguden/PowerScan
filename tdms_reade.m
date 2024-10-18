@@ -1,6 +1,6 @@
 close all
 clear all
-fileName = "C:\Users\olaja\Downloads\1e8to1e9MHz_step1kHz_noTcontrol.tdms";
+fileName = "C:\test\1e75to2e05MHz_step5kHz_noTcontrol_10xV.tdms";
 info = tdmsinfo(fileName);
 synced_channels=info.ChannelList.ChannelName(info.ChannelList.ChannelGroupName=="Untitled")
 all_data=tdmsread(fileName, ChannelGroupName='Untitled', ChannelName=synced_channels)
@@ -24,7 +24,7 @@ all_data.ElapsedTime=all_data.meTECTime(:)-all_data.meTECTime(1)
 all_data.Impedance=all_data.Ch1Amp./(all_data.Ch2Amp./5);
 all_data.Phase=all_data.Ch1Phase-(all_data.Ch2Phase);
 
-%%
+%% plot temp vs freq for all powers
 unique_set_powers=unique(all_data.SetPower)
 figure
 for i=unique_set_powers'%dont forget the '....
@@ -37,7 +37,27 @@ for i=unique_set_powers'%dont forget the '....
     legend
     axis padded
 end
-axis padded
+
+%% plot temp vs freq for different flow
+figure
+all_data.rounded_flow=round(all_data.CetoniFlowRate)
+unique_flows=unique(all_data.rounded_flow)
+specific_power=unique_set_powers(:)
+tiledlayout("flow")
+for i=specific_power'%dont forget the '....
+    nexttile
+    for j=unique_flows'
+        i
+        j
+        hold on
+        plot(all_data.SetFreqCh1(all_data.SetPower==i &all_data.rounded_flow==j),all_data.meTECCH1ObjectTemperatureC(all_data.SetPower==i&all_data.rounded_flow==j), 'DisplayName',"T Ch1 (piezo), @"+i +"W" +j + "flow")
+        %plot(all_data.SetFreqCh1(all_data.SetPower==i),all_data.meTECCH2ObjectTemperatureC(all_data.SetPower==i), 'DisplayName',"T Ch2 (CU-film) @"+i +"W")
+        xlabel("Frequency(Hz)")
+        ylabel("Temperature (C)")
+        legend
+        axis padded
+    end
+end
 
 %% Plot average Temperature for every power (3 points, hehe)
 mean_temp_ch1=[]
